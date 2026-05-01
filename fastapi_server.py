@@ -15,6 +15,7 @@ from vectordb_pipeline import run_vectordb_pipeline
 
 APP_ROOT = Path(__file__).resolve().parent
 DATA_DIR = APP_ROOT / "data"
+CHROMA_PATH = Path(os.getenv("CHROMA_PATH", str(APP_ROOT / "chroma_dbs")))
 
 
 def _parse_origins() -> list[str]:
@@ -184,7 +185,7 @@ def reset_and_load_db() -> dict[str, Any]:
     import chromadb
     from chromadb.utils import embedding_functions
 
-    chroma_path = str(APP_ROOT / "chroma_dbs")
+    chroma_path = str(CHROMA_PATH)
     model_name = "all-MiniLM-L6-v2"
 
     client = chromadb.PersistentClient(path=chroma_path)
@@ -252,7 +253,7 @@ def load_db_data() -> dict[str, Any]:
     import chromadb
     from chromadb.utils import embedding_functions
 
-    chroma_path = str(APP_ROOT / "chroma_dbs")
+    chroma_path = str(CHROMA_PATH)
     model_name = "all-MiniLM-L6-v2"
 
     client = chromadb.PersistentClient(path=chroma_path)
