@@ -1,0 +1,410 @@
+[
+    {
+        "id": "hr_ds_1",
+        "question": "Tell me about a challenge in a data project.",
+        "answer": "Explain a real situation and how you solved it.",
+        "domain": "Data Science & IA"
+    },
+    {
+        "id": "hr_web_1",
+        "question": "Describe a time you handled a deadline under pressure.",
+        "answer": "Explain prioritization, communication, and delivery outcomes.",
+        "domain": "D\u00e9veloppement Web"
+    },
+    {
+        "id": "hr_front_1",
+        "question": "Tell me about a complex UI you built.",
+        "answer": "Explain design challenges, tools used, and performance considerations.",
+        "domain": "Frontend Development"
+    },
+    {
+        "id": "hr_front_2",
+        "question": "Describe a time you improved website performance.",
+        "answer": "Explain techniques like lazy loading, optimization, and results.",
+        "domain": "Frontend Development"
+    },
+    {
+        "id": "hr_front_3",
+        "question": "Tell me about a cross-browser compatibility issue.",
+        "answer": "Explain how you identified and fixed inconsistencies.",
+        "domain": "Frontend Development"
+    },
+    {
+        "id": "hr_back_1",
+        "question": "Describe a backend system you designed.",
+        "answer": "Explain architecture choices, scalability, and challenges.",
+        "domain": "Backend Development"
+    },
+    {
+        "id": "hr_back_2",
+        "question": "Tell me about handling high traffic in an application.",
+        "answer": "Explain scaling strategies and performance improvements.",
+        "domain": "Backend Development"
+    },
+    {
+        "id": "hr_back_3",
+        "question": "Describe a time you optimized database queries.",
+        "answer": "Explain bottlenecks and improvements made.",
+        "domain": "Backend Development"
+    },
+    {
+        "id": "hr_sec_1",
+        "question": "Tell me about a security vulnerability you fixed.",
+        "answer": "Explain detection, mitigation, and prevention strategies.",
+        "domain": "Cybersecurity"
+    },
+    {
+        "id": "hr_sec_2",
+        "question": "Describe a time you implemented authentication/authorization.",
+        "answer": "Explain methods used and security considerations.",
+        "domain": "Cybersecurity"
+    },
+    {
+        "id": "hr_sec_3",
+        "question": "How do you ensure application security?",
+        "answer": "Discuss best practices, audits, and monitoring.",
+        "domain": "Cybersecurity"
+    },
+    {
+        "id": "hr_cloud_1",
+        "question": "Tell me about a cloud migration project.",
+        "answer": "Explain planning, execution, and challenges.",
+        "domain": "Cloud Computing"
+    },
+    {
+        "id": "hr_cloud_2",
+        "question": "Describe how you optimized cloud costs.",
+        "answer": "Explain strategies and measurable outcomes.",
+        "domain": "Cloud Computing"
+    },
+    {
+        "id": "hr_cloud_3",
+        "question": "Tell me about deploying a scalable cloud application.",
+        "answer": "Explain architecture and scaling techniques.",
+        "domain": "Cloud Computing"
+    },
+    {
+        "id": "hr_devops_1",
+        "question": "Describe a CI/CD pipeline you implemented.",
+        "answer": "Explain tools, workflow, and benefits.",
+        "domain": "DevOps"
+    },
+    {
+        "id": "hr_devops_2",
+        "question": "Tell me about a production incident you handled.",
+        "answer": "Explain response, resolution, and lessons learned.",
+        "domain": "DevOps"
+    },
+    {
+        "id": "hr_devops_3",
+        "question": "How do you ensure system reliability?",
+        "answer": "Discuss monitoring, alerting, and redundancy.",
+        "domain": "DevOps"
+    },
+    {
+        "id": "hr_ai_1",
+        "question": "Tell me about an AI model you built.",
+        "answer": "Explain the problem, model choice, and results.",
+        "domain": "AI"
+    },
+    {
+        "id": "hr_ai_2",
+        "question": "Describe a challenge in training a model.",
+        "answer": "Explain data issues, tuning, and improvements.",
+        "domain": "AI"
+    },
+    {
+        "id": "hr_ai_3",
+        "question": "How do you evaluate model performance?",
+        "answer": "Discuss metrics and validation techniques.",
+        "domain": "AI"
+    },
+    {
+        "id": "hr_ds_2",
+        "question": "Describe how you cleaned and prepared data.",
+        "answer": "Explain preprocessing steps and tools used.",
+        "domain": "Data Science & IA"
+    },
+    {
+        "id": "hr_ds_3",
+        "question": "Tell me about a model that did not perform well.",
+        "answer": "Explain debugging and improvements.",
+        "domain": "Data Science & IA"
+    },
+    {
+        "id": "hr_analytics_1",
+        "question": "Tell me about a data analysis project.",
+        "answer": "Explain insights generated and business impact.",
+        "domain": "Data Analytics"
+    },
+    {
+        "id": "hr_analytics_2",
+        "question": "Describe how you communicate insights to stakeholders.",
+        "answer": "Explain visualization and storytelling techniques.",
+        "domain": "Data Analytics"
+    },
+    {
+        "id": "hr_analytics_3",
+        "question": "Tell me about a time you found an unexpected insight.",
+        "answer": "Explain discovery process and impact.",
+        "domain": "Data Analytics"
+    },
+    {
+        "id": "hr_de_1",
+        "question": "Describe a data pipeline you built.",
+        "answer": "Explain architecture, tools, and challenges.",
+        "domain": "Data Engineering"
+    },
+    {
+        "id": "hr_de_2",
+        "question": "Tell me about handling large-scale data processing.",
+        "answer": "Explain tools and optimization techniques.",
+        "domain": "Data Engineering"
+    },
+    {
+        "id": "hr_de_3",
+        "question": "How do you ensure data quality in pipelines?",
+        "answer": "Discuss validation, monitoring, and testing.",
+        "domain": "Data Engineering"
+    },
+    {
+        "id": "hr_gen_1",
+        "question": "Tell me about yourself.",
+        "answer": "Provide a concise summary of your background, key skills, and recent achievements.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_2",
+        "question": "Why do you want to work here?",
+        "answer": "Connect your values and goals with the company's mission and culture.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_3",
+        "question": "What are your strengths?",
+        "answer": "Highlight relevant strengths with examples that demonstrate impact.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_4",
+        "question": "What is your biggest weakness?",
+        "answer": "Mention a real weakness and explain how you are improving it.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_5",
+        "question": "Where do you see yourself in 5 years?",
+        "answer": "Show ambition while aligning your goals with the role and company growth.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_6",
+        "question": "Why should we hire you?",
+        "answer": "Summarize your unique value proposition and how you meet the job requirements.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_7",
+        "question": "Tell me about a time you worked in a team.",
+        "answer": "Describe your role, collaboration, and the outcome achieved.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_8",
+        "question": "How do you handle conflict at work?",
+        "answer": "Explain a situation, your communication approach, and resolution.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_9",
+        "question": "Describe a time you failed.",
+        "answer": "Show accountability and what you learned from the experience.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_10",
+        "question": "What motivates you?",
+        "answer": "Link your motivation to meaningful work, growth, or impact.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_11",
+        "question": "How do you prioritize your tasks?",
+        "answer": "Explain your method for managing time and meeting deadlines.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_12",
+        "question": "Tell me about a time you showed leadership.",
+        "answer": "Describe how you took initiative and influenced others.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_13",
+        "question": "How do you handle stress?",
+        "answer": "Discuss techniques you use to stay productive under pressure.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_14",
+        "question": "Describe a difficult decision you made.",
+        "answer": "Explain your thought process and the result.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_15",
+        "question": "How do you handle feedback?",
+        "answer": "Show openness to feedback and how you apply it.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_16",
+        "question": "What are your salary expectations?",
+        "answer": "Provide a realistic range based on research and flexibility.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_17",
+        "question": "Why are you leaving your current job?",
+        "answer": "Stay positive and focus on growth opportunities.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_18",
+        "question": "Describe your work style.",
+        "answer": "Explain how you organize, collaborate, and deliver results.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_19",
+        "question": "Tell me about a time you solved a problem.",
+        "answer": "Describe the problem, your approach, and the solution.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_gen_20",
+        "question": "How do you learn new skills?",
+        "answer": "Explain your learning strategies and examples.",
+        "domain": "General"
+    },
+    {
+        "id": "hr_tech_1",
+        "question": "Describe a challenging technical problem you solved.",
+        "answer": "Explain the issue, your approach, and the outcome.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_2",
+        "question": "How do you keep your technical skills updated?",
+        "answer": "Mention courses, projects, and continuous learning habits.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_3",
+        "question": "Tell me about a project you are proud of.",
+        "answer": "Highlight your role, technologies used, and impact.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_4",
+        "question": "How do you approach debugging?",
+        "answer": "Explain your systematic process to identify and fix issues.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_5",
+        "question": "Describe a time you missed a deadline.",
+        "answer": "Explain what happened and what you learned.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_6",
+        "question": "How do you ensure code quality?",
+        "answer": "Discuss testing, reviews, and best practices.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_7",
+        "question": "Tell me about working with cross-functional teams.",
+        "answer": "Explain collaboration with non-technical stakeholders.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_8",
+        "question": "How do you handle tight project deadlines?",
+        "answer": "Discuss prioritization and communication.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_9",
+        "question": "Describe a time you improved a process.",
+        "answer": "Explain what you changed and the results.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_tech_10",
+        "question": "How do you document your work?",
+        "answer": "Explain your documentation practices.",
+        "domain": "Tech"
+    },
+    {
+        "id": "hr_beh_1",
+        "question": "Tell me about a time you had a conflict with a coworker.",
+        "answer": "Describe the situation and how you resolved it professionally.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_2",
+        "question": "Describe a time you had to adapt to change.",
+        "answer": "Explain how you handled the transition.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_3",
+        "question": "Tell me about a time you took initiative.",
+        "answer": "Describe your actions and the outcome.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_4",
+        "question": "Describe a time you handled multiple tasks.",
+        "answer": "Explain how you prioritized and managed them.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_5",
+        "question": "Tell me about a time you received criticism.",
+        "answer": "Explain your response and improvement.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_6",
+        "question": "Describe a time you helped a colleague.",
+        "answer": "Explain your support and the result.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_7",
+        "question": "Tell me about a time you exceeded expectations.",
+        "answer": "Explain what you did beyond requirements.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_8",
+        "question": "Describe a time you worked under pressure.",
+        "answer": "Explain how you managed stress and delivered.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_9",
+        "question": "Tell me about a time you made a mistake.",
+        "answer": "Show accountability and lessons learned.",
+        "domain": "Behavioral"
+    },
+    {
+        "id": "hr_beh_10",
+        "question": "Describe a time you led a team.",
+        "answer": "Explain your leadership and results.",
+        "domain": "Behavioral"
+    }
+]

@@ -1,0 +1,2733 @@
+[
+  {
+    "id": "tech_ds_1",
+    "question": "What is overfitting?",
+    "answer": "Overfitting happens when a model learns training data too well and fails to generalize.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_2",
+    "question": "What is underfitting?",
+    "answer": "Underfitting occurs when a model is too simple to capture patterns in data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_3",
+    "question": "What is bias in machine learning?",
+    "answer": "Bias is error due to overly simplistic assumptions in the model.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_4",
+    "question": "What is variance in machine learning?",
+    "answer": "Variance is how sensitive a model is to small changes in training data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_5",
+    "question": "What is bias-variance tradeoff?",
+    "answer": "It is the balance between model simplicity and flexibility.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_6",
+    "question": "What is supervised learning?",
+    "answer": "Learning with labeled data to predict outputs.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_7",
+    "question": "What is unsupervised learning?",
+    "answer": "Learning patterns from unlabeled data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_8",
+    "question": "What is reinforcement learning?",
+    "answer": "Learning through rewards and penalties from actions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_9",
+    "question": "What is classification?",
+    "answer": "Predicting discrete labels for data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_10",
+    "question": "What is regression?",
+    "answer": "Predicting continuous numerical values.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_11",
+    "question": "What is clustering?",
+    "answer": "Grouping similar data points together.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_12",
+    "question": "What is K-means clustering?",
+    "answer": "An algorithm that groups data into K clusters.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_13",
+    "question": "What is a decision tree?",
+    "answer": "A model that splits data based on feature decisions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_14",
+    "question": "What is random forest?",
+    "answer": "An ensemble of decision trees for better accuracy.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_15",
+    "question": "What is gradient boosting?",
+    "answer": "An ensemble technique that builds models sequentially.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_16",
+    "question": "What is a neural network?",
+    "answer": "A model inspired by the human brain with layers of neurons.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_17",
+    "question": "What is deep learning?",
+    "answer": "A subset of ML using multi-layer neural networks.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_18",
+    "question": "What is an activation function?",
+    "answer": "A function that introduces non-linearity in neural networks.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_19",
+    "question": "What is ReLU?",
+    "answer": "ReLU is an activation function that outputs max(0, x).",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_20",
+    "question": "What is sigmoid function?",
+    "answer": "A function that maps values between 0 and 1.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_21",
+    "question": "What is loss function?",
+    "answer": "It measures error between predicted and actual values.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_22",
+    "question": "What is gradient descent?",
+    "answer": "An optimization algorithm to minimize loss.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_23",
+    "question": "What is learning rate?",
+    "answer": "It controls how fast a model learns.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_24",
+    "question": "What is feature engineering?",
+    "answer": "Creating useful features from raw data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_25",
+    "question": "What is feature selection?",
+    "answer": "Choosing the most important features for a model.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_26",
+    "question": "What is normalization?",
+    "answer": "Scaling data to a specific range.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_27",
+    "question": "What is standardization?",
+    "answer": "Scaling data to mean 0 and standard deviation 1.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_28",
+    "question": "What is PCA?",
+    "answer": "Principal Component Analysis reduces data dimensions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_29",
+    "question": "What is dimensionality reduction?",
+    "answer": "Reducing number of features while keeping important info.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_30",
+    "question": "What is data leakage?",
+    "answer": "When test data information leaks into training data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_31",
+    "question": "What is cross-validation?",
+    "answer": "Technique to evaluate model performance on multiple splits.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_32",
+    "question": "What is accuracy?",
+    "answer": "Percentage of correct predictions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_33",
+    "question": "What is precision?",
+    "answer": "Correct positive predictions over total predicted positives.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_34",
+    "question": "What is recall?",
+    "answer": "Correct positives over actual positives.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_35",
+    "question": "What is F1-score?",
+    "answer": "Harmonic mean of precision and recall.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_36",
+    "question": "What is confusion matrix?",
+    "answer": "Table showing TP, TN, FP, FN predictions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_37",
+    "question": "What is AUC-ROC?",
+    "answer": "Metric measuring classification model performance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_38",
+    "question": "What is imbalanced dataset?",
+    "answer": "Dataset where classes are not equally distributed.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_39",
+    "question": "What is SMOTE?",
+    "answer": "Technique to handle imbalanced data by oversampling.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_40",
+    "question": "What is NLP?",
+    "answer": "Natural Language Processing deals with text and language data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_41",
+    "question": "What is tokenization?",
+    "answer": "Splitting text into smaller units like words or tokens.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_42",
+    "question": "What is stemming?",
+    "answer": "Reducing words to their root form.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_43",
+    "question": "What is lemmatization?",
+    "answer": "Reducing words to dictionary base form.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_44",
+    "question": "What is TF-IDF?",
+    "answer": "Technique to measure word importance in documents.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_45",
+    "question": "What is word embedding?",
+    "answer": "Representation of words as vectors.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_46",
+    "question": "What is time series analysis?",
+    "answer": "Analysis of data points over time.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_47",
+    "question": "What is ARIMA?",
+    "answer": "A model used for time series forecasting.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_48",
+    "question": "What is anomaly detection?",
+    "answer": "Identifying unusual patterns in data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_49",
+    "question": "What is batch learning?",
+    "answer": "Training model on entire dataset at once.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_50",
+    "question": "What is online learning?",
+    "answer": "Training model incrementally with new data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_51",
+    "question": "What is feature scaling?",
+    "answer": "Feature scaling adjusts data values to a similar range to improve model performance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_52",
+    "question": "What is a pipeline in machine learning?",
+    "answer": "A pipeline automates steps like preprocessing, training, and evaluation.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_53",
+    "question": "What is hyperparameter tuning?",
+    "answer": "It is the process of optimizing model parameters to improve performance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_54",
+    "question": "What is grid search?",
+    "answer": "Grid search tests multiple hyperparameter combinations to find the best model.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_55",
+    "question": "What is random search?",
+    "answer": "Random search samples hyperparameter combinations randomly for optimization.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_56",
+    "question": "What is over-sampling?",
+    "answer": "Over-sampling increases minority class samples to balance data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_57",
+    "question": "What is under-sampling?",
+    "answer": "Under-sampling reduces majority class samples to balance data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_58",
+    "question": "What is a confusion matrix used for?",
+    "answer": "It evaluates classification performance using prediction outcomes.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_59",
+    "question": "What is log loss?",
+    "answer": "Log loss measures the uncertainty of probabilistic predictions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_60",
+    "question": "What is regression analysis?",
+    "answer": "Regression models relationships between variables to predict outcomes.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_61",
+    "question": "What is linear regression?",
+    "answer": "A model that predicts values using a linear relationship.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_62",
+    "question": "What is logistic regression?",
+    "answer": "A classification algorithm that predicts probabilities.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_63",
+    "question": "What is k-nearest neighbors (KNN)?",
+    "answer": "A model that classifies based on closest data points.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_64",
+    "question": "What is SVM?",
+    "answer": "Support Vector Machine separates classes using hyperplanes.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_65",
+    "question": "What is kernel trick in SVM?",
+    "answer": "It transforms data into higher dimensions for better separation.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_66",
+    "question": "What is ensemble learning?",
+    "answer": "Combining multiple models to improve performance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_67",
+    "question": "What is bagging?",
+    "answer": "Bagging trains multiple models on random subsets of data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_68",
+    "question": "What is boosting?",
+    "answer": "Boosting builds models sequentially to correct errors.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_69",
+    "question": "What is stacking?",
+    "answer": "Stacking combines multiple models using a meta-model.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_70",
+    "question": "What is dropout in neural networks?",
+    "answer": "Dropout randomly disables neurons to prevent overfitting.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_71",
+    "question": "What is backpropagation?",
+    "answer": "It is the process of updating weights using gradients.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_72",
+    "question": "What is an epoch?",
+    "answer": "One full pass through the training dataset.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_73",
+    "question": "What is batch size?",
+    "answer": "Number of samples processed before updating the model.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_74",
+    "question": "What is CNN?",
+    "answer": "Convolutional Neural Network used for image processing.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_75",
+    "question": "What is RNN?",
+    "answer": "Recurrent Neural Network used for sequential data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_76",
+    "question": "What is LSTM?",
+    "answer": "A type of RNN that handles long-term dependencies.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_77",
+    "question": "What is GRU?",
+    "answer": "A simplified version of LSTM for sequence learning.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_78",
+    "question": "What is transfer learning?",
+    "answer": "Using a pre-trained model for a new task.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_79",
+    "question": "What is fine-tuning?",
+    "answer": "Adjusting a pre-trained model for a specific task.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_80",
+    "question": "What is data augmentation?",
+    "answer": "Creating modified versions of data to improve training.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_81",
+    "question": "What is ETL?",
+    "answer": "Extract, Transform, Load process for data pipelines.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_82",
+    "question": "What is data warehouse?",
+    "answer": "A system for storing large volumes of structured data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_83",
+    "question": "What is data lake?",
+    "answer": "A storage system for raw and unstructured data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_84",
+    "question": "What is Apache Spark?",
+    "answer": "A distributed computing framework for big data processing.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_85",
+    "question": "What is Hadoop?",
+    "answer": "A framework for distributed storage and processing of big data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_86",
+    "question": "What is MapReduce?",
+    "answer": "A programming model for processing large datasets.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_87",
+    "question": "What is feature importance?",
+    "answer": "It shows how much each feature contributes to predictions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_88",
+    "question": "What is correlation?",
+    "answer": "A measure of relationship between two variables.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_89",
+    "question": "What is multicollinearity?",
+    "answer": "When features are highly correlated with each other.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_90",
+    "question": "What is data preprocessing?",
+    "answer": "Cleaning and preparing raw data for analysis.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_91",
+    "question": "What is exploratory data analysis (EDA)?",
+    "answer": "Analyzing data to find patterns and insights.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_92",
+    "question": "What is a dataset split?",
+    "answer": "Dividing data into training, validation, and test sets.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_93",
+    "question": "What is model deployment?",
+    "answer": "Making a trained model available for real-world use.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_94",
+    "question": "What is monitoring in ML?",
+    "answer": "Tracking model performance over time.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_95",
+    "question": "What is concept drift?",
+    "answer": "When data distribution changes over time.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_96",
+    "question": "What is data labeling?",
+    "answer": "Assigning correct labels to raw data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_97",
+    "question": "What is semi-supervised learning?",
+    "answer": "Training with a mix of labeled and unlabeled data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_98",
+    "question": "What is self-supervised learning?",
+    "answer": "Learning representations from unlabeled data using pretext tasks.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_99",
+    "question": "What is reinforcement signal?",
+    "answer": "Feedback used to guide learning in reinforcement learning.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_100",
+    "question": "What is model interpretability?",
+    "answer": "Understanding how a model makes predictions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_ds_101",
+    "question": "What is overfitting?",
+    "answer": "Overfitting is when a model memorizes training data and fails to generalize.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "tech_web_1",
+    "question": "What is REST API?",
+    "answer": "REST is an architectural style that uses HTTP methods for communication.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_2",
+    "question": "What is HTTP?",
+    "answer": "HTTP is a protocol used for transferring data over the web.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_3",
+    "question": "What is HTTPS?",
+    "answer": "HTTPS is a secure version of HTTP using encryption via SSL/TLS.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_4",
+    "question": "What is the DOM?",
+    "answer": "The DOM is a programming interface representing HTML as a tree structure.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_5",
+    "question": "What is CSS specificity?",
+    "answer": "It determines which CSS rule is applied based on selector priority.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_6",
+    "question": "What is Flexbox?",
+    "answer": "Flexbox is a CSS layout model for designing flexible responsive layouts.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_7",
+    "question": "What is Grid in CSS?",
+    "answer": "CSS Grid is a layout system for creating two-dimensional layouts.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_8",
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a programming language used to create dynamic web content.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_9",
+    "question": "What is an event in JavaScript?",
+    "answer": "An event is an action like click or input that can trigger code execution.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_10",
+    "question": "What is AJAX?",
+    "answer": "AJAX allows asynchronous communication with a server without reloading the page.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_11",
+    "question": "What is JSON?",
+    "answer": "JSON is a lightweight data format for storing and exchanging data.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_12",
+    "question": "What is localStorage?",
+    "answer": "localStorage stores data in the browser with no expiration time.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_13",
+    "question": "What is sessionStorage?",
+    "answer": "sessionStorage stores data for the duration of a page session.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_14",
+    "question": "What is a cookie?",
+    "answer": "A cookie is small data stored in the browser for session tracking.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_15",
+    "question": "What is CORS?",
+    "answer": "CORS allows controlled access to resources from different origins.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_16",
+    "question": "What is a promise in JavaScript?",
+    "answer": "A promise represents a future result of an asynchronous operation.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_17",
+    "question": "What is async/await?",
+    "answer": "It is syntax for handling asynchronous code in a synchronous style.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_18",
+    "question": "What is Node.js?",
+    "answer": "Node.js is a runtime for executing JavaScript on the server.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_19",
+    "question": "What is Express.js?",
+    "answer": "Express is a web framework for Node.js to build APIs and servers.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_20",
+    "question": "What is middleware?",
+    "answer": "Middleware is a function that processes requests in a server pipeline.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_21",
+    "question": "What is MVC?",
+    "answer": "MVC is a design pattern separating model, view, and controller.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_22",
+    "question": "What is a SPA?",
+    "answer": "A SPA is a single-page application that dynamically updates content.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_23",
+    "question": "What is React?",
+    "answer": "React is a JavaScript library for building user interfaces.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_24",
+    "question": "What is Angular?",
+    "answer": "Angular is a framework for building dynamic web applications.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_25",
+    "question": "What is Vue.js?",
+    "answer": "Vue.js is a progressive JavaScript framework for building UIs.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_26",
+    "question": "What is state in frontend frameworks?",
+    "answer": "State is data that determines how components render and behave.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_27",
+    "question": "What is a component?",
+    "answer": "A component is a reusable piece of UI in modern frameworks.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_28",
+    "question": "What is Webpack?",
+    "answer": "Webpack is a module bundler for JavaScript applications.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_29",
+    "question": "What is Babel?",
+    "answer": "Babel transpiles modern JavaScript into compatible versions.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_30",
+    "question": "What is TypeScript?",
+    "answer": "TypeScript is a typed superset of JavaScript.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_31",
+    "question": "What is SQL?",
+    "answer": "SQL is a language used to manage relational databases.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_32",
+    "question": "What is NoSQL?",
+    "answer": "NoSQL databases store data in non-relational formats.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_33",
+    "question": "What is indexing in databases?",
+    "answer": "Indexing improves query performance by organizing data.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_34",
+    "question": "What is authentication?",
+    "answer": "Authentication verifies the identity of a user.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_35",
+    "question": "What is authorization?",
+    "answer": "Authorization determines access rights for a user.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_36",
+    "question": "What is JWT?",
+    "answer": "JWT is a token-based authentication mechanism.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_37",
+    "question": "What is hashing?",
+    "answer": "Hashing converts data into a fixed-size string for security.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_38",
+    "question": "What is Git?",
+    "answer": "Git is a version control system for tracking code changes.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_39",
+    "question": "What is a branch in Git?",
+    "answer": "A branch is an independent line of development.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_40",
+    "question": "What is CI/CD?",
+    "answer": "CI/CD automates testing and deployment of code.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_41",
+    "question": "What is Docker?",
+    "answer": "Docker is a tool for containerizing applications.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_42",
+    "question": "What is an API?",
+    "answer": "An API is an interface that allows communication between systems.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_43",
+    "question": "What is rate limiting?",
+    "answer": "Rate limiting controls the number of requests a client can make.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_44",
+    "question": "What is caching?",
+    "answer": "Caching stores data temporarily to improve performance.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_45",
+    "question": "What is a CDN?",
+    "answer": "A CDN distributes content across servers for faster delivery.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_46",
+    "question": "What is SSR?",
+    "answer": "SSR renders web pages on the server before sending to the client.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_47",
+    "question": "What is CSR?",
+    "answer": "CSR renders web pages in the browser using JavaScript.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_48",
+    "question": "What is WebSocket?",
+    "answer": "WebSocket enables real-time two-way communication.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_49",
+    "question": "What is progressive web app (PWA)?",
+    "answer": "A PWA is a web app with offline support and app-like features.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_50",
+    "question": "What is responsive design?",
+    "answer": "Responsive design adapts UI to different screen sizes.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_51",
+    "question": "What is Spring Framework?",
+    "answer": "Spring is a Java framework for building enterprise and web applications.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_52",
+    "question": "What is Spring Boot?",
+    "answer": "Spring Boot simplifies Spring application setup with auto-configuration.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_53",
+    "question": "What is dependency injection?",
+    "answer": "It is a design pattern where dependencies are provided externally.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_54",
+    "question": "What is Inversion of Control (IoC)?",
+    "answer": "IoC means the framework controls object creation and lifecycle.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_55",
+    "question": "What is a Spring Bean?",
+    "answer": "A Spring Bean is an object managed by the Spring container.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_56",
+    "question": "What is @RestController?",
+    "answer": "It is a Spring annotation for building RESTful web services.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_57",
+    "question": "What is @Autowired?",
+    "answer": "It is used for automatic dependency injection in Spring.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_58",
+    "question": "What is Spring MVC?",
+    "answer": "Spring MVC is a module for building web applications using MVC pattern.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_59",
+    "question": "What is Hibernate?",
+    "answer": "Hibernate is an ORM framework for mapping Java objects to databases.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_60",
+    "question": "What is JPA?",
+    "answer": "JPA is a specification for object-relational mapping in Java.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_61",
+    "question": "What is @Entity?",
+    "answer": "It marks a class as a database entity in JPA.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_62",
+    "question": "What is @Repository?",
+    "answer": "It indicates a class handles database operations in Spring.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_63",
+    "question": "What is @Service?",
+    "answer": "It defines business logic layer components in Spring.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_64",
+    "question": "What is @Controller?",
+    "answer": "It is used to define web controllers in Spring MVC.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_65",
+    "question": "What is Spring Security?",
+    "answer": "Spring Security provides authentication and authorization features.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_66",
+    "question": "What is a microservice?",
+    "answer": "It is an architecture where applications are split into small services.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_67",
+    "question": "What is Spring Cloud?",
+    "answer": "Spring Cloud helps build distributed systems and microservices.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_68",
+    "question": "What is application.properties?",
+    "answer": "It is a configuration file in Spring Boot applications.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_69",
+    "question": "What is @RequestMapping?",
+    "answer": "It maps HTTP requests to handler methods in Spring.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_70",
+    "question": "What is @GetMapping?",
+    "answer": "It handles HTTP GET requests in Spring controllers.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_71",
+    "question": "What is ASP.NET?",
+    "answer": "ASP.NET is a framework for building web applications in .NET.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_72",
+    "question": "What is ASP.NET Core?",
+    "answer": "ASP.NET Core is a cross-platform framework for web apps.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_73",
+    "question": "What is MVC in ASP.NET?",
+    "answer": "It is a pattern separating model, view, and controller in .NET apps.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_74",
+    "question": "What is Razor?",
+    "answer": "Razor is a syntax for building dynamic web pages in ASP.NET.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_75",
+    "question": "What is Entity Framework?",
+    "answer": "It is an ORM for .NET to interact with databases.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_76",
+    "question": "What is LINQ?",
+    "answer": "LINQ is a query syntax for collections in .NET.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_77",
+    "question": "What is middleware in ASP.NET Core?",
+    "answer": "Middleware handles HTTP requests in a pipeline.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_78",
+    "question": "What is dependency injection in .NET?",
+    "answer": "It allows services to be injected into classes.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_79",
+    "question": "What is Kestrel?",
+    "answer": "Kestrel is a web server for ASP.NET Core applications.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_80",
+    "question": "What is Web API in .NET?",
+    "answer": "It is used to build RESTful services in ASP.NET.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_81",
+    "question": "What is routing in ASP.NET?",
+    "answer": "Routing maps URLs to controller actions.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_82",
+    "question": "What is appsettings.json?",
+    "answer": "It is a configuration file in .NET applications.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_83",
+    "question": "What is Blazor?",
+    "answer": "Blazor allows building interactive web UIs using C#.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_84",
+    "question": "What is SignalR?",
+    "answer": "SignalR enables real-time web functionality in .NET apps.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_85",
+    "question": "What is Identity in ASP.NET?",
+    "answer": "ASP.NET Identity manages authentication and users.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_86",
+    "question": "What is a controller in ASP.NET?",
+    "answer": "A controller handles incoming HTTP requests.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_87",
+    "question": "What is a model in ASP.NET?",
+    "answer": "A model represents application data and business logic.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_88",
+    "question": "What is a view in ASP.NET?",
+    "answer": "A view is responsible for rendering UI.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_89",
+    "question": "What is caching in ASP.NET?",
+    "answer": "Caching improves performance by storing frequently used data.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_90",
+    "question": "What is session management in .NET?",
+    "answer": "It manages user state across requests.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_91",
+    "question": "What is logging in .NET?",
+    "answer": "Logging records application events for monitoring.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_92",
+    "question": "What is Swagger?",
+    "answer": "Swagger is used to document and test APIs.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_93",
+    "question": "What is DTO?",
+    "answer": "DTO is an object used to transfer data between layers.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_94",
+    "question": "What is AutoMapper?",
+    "answer": "AutoMapper maps objects to other objects in .NET.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_95",
+    "question": "What is exception handling in .NET?",
+    "answer": "It manages runtime errors using try-catch blocks.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_96",
+    "question": "What is garbage collection in .NET?",
+    "answer": "It automatically manages memory allocation and deallocation.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_97",
+    "question": "What is multithreading?",
+    "answer": "It allows multiple threads to execute concurrently.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_98",
+    "question": "What is async programming in .NET?",
+    "answer": "It allows non-blocking execution using async and await.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_99",
+    "question": "What is RESTful service in Spring Boot?",
+    "answer": "It is a web service following REST principles using Spring Boot.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_100",
+    "question": "What is configuration in Spring?",
+    "answer": "It defines how application components are set up and connected.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_101",
+    "question": "What is REST API?",
+    "answer": "REST is an architectural style using HTTP methods.",
+    "domain": "Développement Web"
+  },
+  {
+    "id": "tech_web_102",
+    "question": "What is Next.js?",
+    "answer": "Next.js is a React framework for building server-side rendered and static web applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_103",
+    "question": "What is server-side rendering (SSR) in Next.js?",
+    "answer": "SSR generates HTML on the server for each request before sending it to the browser.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_104",
+    "question": "What is static site generation (SSG)?",
+    "answer": "SSG generates HTML pages at build time for faster performance.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_105",
+    "question": "What is incremental static regeneration (ISR)?",
+    "answer": "ISR allows static pages to be updated after build without rebuilding the whole site.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_106",
+    "question": "What is getServerSideProps?",
+    "answer": "It is a Next.js function used to fetch data on each request.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_107",
+    "question": "What is getStaticProps?",
+    "answer": "It fetches data at build time for static page generation.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_108",
+    "question": "What is getStaticPaths?",
+    "answer": "It defines dynamic routes to be pre-rendered at build time.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_109",
+    "question": "What is Next.js routing?",
+    "answer": "Next.js uses file-based routing where files define routes automatically.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_110",
+    "question": "What is dynamic routing in Next.js?",
+    "answer": "Dynamic routing allows pages to be created using parameters in the URL.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_111",
+    "question": "What is the pages directory in Next.js?",
+    "answer": "It is where routes are defined based on file structure.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_112",
+    "question": "What is the app router in Next.js?",
+    "answer": "It is a newer routing system using React Server Components.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_113",
+    "question": "What are React Server Components?",
+    "answer": "Components rendered on the server to reduce client-side JavaScript.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_114",
+    "question": "What is hydration in Next.js?",
+    "answer": "Hydration is the process of making static HTML interactive on the client.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_115",
+    "question": "What is API routes in Next.js?",
+    "answer": "API routes allow building backend endpoints inside a Next.js app.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_116",
+    "question": "What is middleware in Next.js?",
+    "answer": "Middleware runs before a request is completed to modify or redirect it.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_117",
+    "question": "What is image optimization in Next.js?",
+    "answer": "Next.js automatically optimizes images for performance and loading speed.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_118",
+    "question": "What is next/image?",
+    "answer": "It is a built-in component for optimized image rendering.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_119",
+    "question": "What is next/font?",
+    "answer": "It is a feature for optimizing and loading fonts efficiently.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_120",
+    "question": "What is code splitting in Next.js?",
+    "answer": "Code splitting loads only required JavaScript for each page.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_121",
+    "question": "What is prefetching in Next.js?",
+    "answer": "Prefetching loads linked pages in advance for faster navigation.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_122",
+    "question": "What is environment variable usage in Next.js?",
+    "answer": "Environment variables store sensitive configuration data securely.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_123",
+    "question": "What is .env file in Next.js?",
+    "answer": "It is used to define environment variables for the application.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_124",
+    "question": "What is Next.js build process?",
+    "answer": "It compiles and optimizes the app for production deployment.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_125",
+    "question": "What is next.config.js?",
+    "answer": "It is the configuration file for customizing Next.js behavior.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_126",
+    "question": "What is TypeScript support in Next.js?",
+    "answer": "Next.js supports TypeScript out of the box.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_127",
+    "question": "What is static optimization?",
+    "answer": "Next.js automatically pre-renders pages when possible.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_128",
+    "question": "What is fallback in getStaticPaths?",
+    "answer": "It defines behavior for routes not generated at build time.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_129",
+    "question": "What is client-side rendering (CSR)?",
+    "answer": "CSR renders pages in the browser using JavaScript.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_130",
+    "question": "What is routing transition in Next.js?",
+    "answer": "It is navigation between pages without full page reload.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_131",
+    "question": "What is shallow routing?",
+    "answer": "It updates URL without running data fetching methods again.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_132",
+    "question": "What is layout in Next.js?",
+    "answer": "Layouts define shared UI structure across pages.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_133",
+    "question": "What is nested routing?",
+    "answer": "It allows routes within routes using folder structure.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_134",
+    "question": "What is error handling in Next.js?",
+    "answer": "It manages runtime and rendering errors in applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_135",
+    "question": "What is 404 page in Next.js?",
+    "answer": "A custom page shown when a route is not found.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_136",
+    "question": "What is SSR caching?",
+    "answer": "Caching server-rendered pages to improve performance.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_137",
+    "question": "What is revalidation in Next.js?",
+    "answer": "It updates static pages after a defined time interval.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_138",
+    "question": "What is edge functions in Next.js?",
+    "answer": "Functions that run closer to the user for low latency.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_139",
+    "question": "What is deployment in Next.js?",
+    "answer": "It is publishing the application to a hosting platform.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_140",
+    "question": "What is Vercel?",
+    "answer": "Vercel is the official platform for deploying Next.js apps.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_141",
+    "question": "What is authentication in Next.js?",
+    "answer": "It is managing user login and access control.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_142",
+    "question": "What is NextAuth.js?",
+    "answer": "A library for authentication in Next.js applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_143",
+    "question": "What is session handling in Next.js?",
+    "answer": "It stores user session data across requests.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_144",
+    "question": "What is CSR vs SSR in Next.js?",
+    "answer": "CSR renders in browser, SSR renders on server.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_145",
+    "question": "What is performance optimization in Next.js?",
+    "answer": "It includes caching, image optimization, and code splitting.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_146",
+    "question": "What is SEO in Next.js?",
+    "answer": "SEO is improved using SSR and metadata handling.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_147",
+    "question": "What is metadata in Next.js?",
+    "answer": "Metadata defines page titles and SEO information.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_148",
+    "question": "What is streaming in Next.js?",
+    "answer": "Streaming sends parts of UI progressively to the browser.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_149",
+    "question": "What is Suspense in Next.js?",
+    "answer": "Suspense handles loading states for async components.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_150",
+    "question": "What is server actions in Next.js?",
+    "answer": "Server actions allow server-side functions triggered from UI.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_151",
+    "question": "What is caching strategy in Next.js?",
+    "answer": "It controls how and when data is stored and reused.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_152",
+    "question": "What is monorepo support in Next.js?",
+    "answer": "Next.js supports managing multiple apps in one repository.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_153",
+    "question": "What is Laravel?",
+    "answer": "Laravel is a PHP framework used for building modern web applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_154",
+    "question": "What is MVC in Laravel?",
+    "answer": "MVC is a pattern separating Model, View, and Controller layers.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_155",
+    "question": "What is routing in Laravel?",
+    "answer": "Routing defines how application URLs map to controllers or closures.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_156",
+    "question": "What are Laravel controllers?",
+    "answer": "Controllers handle application logic and user requests.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_157",
+    "question": "What are Laravel models?",
+    "answer": "Models represent database tables and handle data logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_158",
+    "question": "What are Laravel migrations?",
+    "answer": "Migrations manage database schema changes over time.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_159",
+    "question": "What is Eloquent ORM?",
+    "answer": "Eloquent is Laravel's ORM for interacting with databases.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_160",
+    "question": "What is a Blade template?",
+    "answer": "Blade is Laravel's templating engine for building views.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_161",
+    "question": "What is middleware in Laravel?",
+    "answer": "Middleware filters HTTP requests entering the application.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_162",
+    "question": "What is Laravel service container?",
+    "answer": "It manages class dependencies and dependency injection.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_163",
+    "question": "What is dependency injection in Laravel?",
+    "answer": "It provides required dependencies to classes automatically.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_164",
+    "question": "What is Laravel service provider?",
+    "answer": "Service providers bootstrap application services.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_165",
+    "question": "What is Laravel Artisan?",
+    "answer": "Artisan is a command-line tool for Laravel tasks.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_166",
+    "question": "What is Laravel authentication?",
+    "answer": "It handles user login, registration, and session management.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_167",
+    "question": "What is authorization in Laravel?",
+    "answer": "Authorization controls what users are allowed to do.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_168",
+    "question": "What are Laravel policies?",
+    "answer": "Policies define authorization logic for models.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_169",
+    "question": "What are Laravel gates?",
+    "answer": "Gates define simple authorization rules.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_170",
+    "question": "What is CSRF protection in Laravel?",
+    "answer": "It prevents unauthorized commands from being submitted.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_171",
+    "question": "What is session in Laravel?",
+    "answer": "Session stores user data across multiple requests.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_172",
+    "question": "What is caching in Laravel?",
+    "answer": "Caching stores data temporarily for faster access.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_173",
+    "question": "What is Redis in Laravel?",
+    "answer": "Redis is used for caching and fast data storage.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_174",
+    "question": "What are Laravel queues?",
+    "answer": "Queues handle background tasks asynchronously.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_175",
+    "question": "What are Laravel jobs?",
+    "answer": "Jobs represent tasks that are processed by queues.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_176",
+    "question": "What are Laravel events?",
+    "answer": "Events allow triggering actions in response to application events.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_177",
+    "question": "What are Laravel listeners?",
+    "answer": "Listeners respond to events and execute logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_178",
+    "question": "What is Laravel scheduler?",
+    "answer": "It schedules tasks to run automatically at specific times.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_179",
+    "question": "What is Laravel validation?",
+    "answer": "Validation ensures incoming data is correct and safe.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_180",
+    "question": "What is request in Laravel?",
+    "answer": "Request represents HTTP request data from users.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_181",
+    "question": "What is response in Laravel?",
+    "answer": "Response sends data back to the client.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_182",
+    "question": "What is API development in Laravel?",
+    "answer": "It is building RESTful APIs using Laravel framework.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_183",
+    "question": "What is Laravel Sanctum?",
+    "answer": "Sanctum provides authentication for SPAs and APIs.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_184",
+    "question": "What is Laravel Passport?",
+    "answer": "Passport provides full OAuth2 authentication system.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_185",
+    "question": "What is file storage in Laravel?",
+    "answer": "It manages uploading and storing files.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_186",
+    "question": "What is filesystem in Laravel?",
+    "answer": "Filesystem provides abstraction for local and cloud storage.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_187",
+    "question": "What is pagination in Laravel?",
+    "answer": "Pagination splits large datasets into smaller pages.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_188",
+    "question": "What is seeding in Laravel?",
+    "answer": "Seeding populates database with test or initial data.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_189",
+    "question": "What is factory in Laravel?",
+    "answer": "Factories generate fake data for testing.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_190",
+    "question": "What is relationship in Eloquent?",
+    "answer": "Relationships define how database tables are connected.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_191",
+    "question": "What is one-to-one relationship?",
+    "answer": "A relationship where one record matches one other record.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_192",
+    "question": "What is one-to-many relationship?",
+    "answer": "A relationship where one record has many related records.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_193",
+    "question": "What is many-to-many relationship?",
+    "answer": "A relationship where multiple records relate to multiple others.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_194",
+    "question": "What is pivot table in Laravel?",
+    "answer": "A table used to manage many-to-many relationships.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_195",
+    "question": "What is eager loading?",
+    "answer": "It loads related data efficiently to avoid N+1 queries.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_196",
+    "question": "What is lazy loading?",
+    "answer": "It loads related data only when needed.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_197",
+    "question": "What is query builder in Laravel?",
+    "answer": "It provides a fluent interface for database queries.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_198",
+    "question": "What is soft delete?",
+    "answer": "Soft delete marks records as deleted without removing them.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_199",
+    "question": "What is database transaction in Laravel?",
+    "answer": "A transaction ensures multiple database operations succeed together.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_200",
+    "question": "What is error handling in Laravel?",
+    "answer": "It manages exceptions and application errors gracefully.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_201",
+    "question": "What is logging in Laravel?",
+    "answer": "Logging records application events and errors.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_202",
+    "question": "What is environment configuration in Laravel?",
+    "answer": "It manages settings using the .env file.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_203",
+    "question": "What is deployment of Laravel application?",
+    "answer": "It is the process of publishing Laravel app to a server.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_204",
+    "question": "What is JVM (Java Virtual Machine)?",
+    "answer": "JVM is the runtime environment that executes Java bytecode.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_205",
+    "question": "What is bytecode in Java?",
+    "answer": "Bytecode is the intermediate code generated by the Java compiler.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_206",
+    "question": "What is JDK?",
+    "answer": "JDK is a development kit used to build Java applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_207",
+    "question": "What is JRE?",
+    "answer": "JRE provides libraries and JVM to run Java applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_208",
+    "question": "What is Spring Boot Actuator?",
+    "answer": "Actuator provides production-ready monitoring and metrics.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_209",
+    "question": "What is Spring Data JPA?",
+    "answer": "It simplifies database access using JPA in Spring applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_210",
+    "question": "What is Spring Boot starter dependency?",
+    "answer": "Starters are pre-configured dependencies for specific features.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_211",
+    "question": "What is profile in Spring Boot?",
+    "answer": "Profiles allow different configurations for environments.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_212",
+    "question": "What is Hibernate lazy loading?",
+    "answer": "Lazy loading loads data only when it is accessed.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_213",
+    "question": "What is Hibernate caching?",
+    "answer": "Caching improves performance by storing frequently used data.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_214",
+    "question": "What is transaction management in Spring?",
+    "answer": "It ensures database operations are executed safely and consistently.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_215",
+    "question": "What is @Transactional annotation?",
+    "answer": "It defines a method or class as transactional.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_216",
+    "question": "What is Spring AOP?",
+    "answer": "Aspect-Oriented Programming separates cross-cutting concerns.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_217",
+    "question": "What is aspect in Spring AOP?",
+    "answer": "An aspect is a module that contains cross-cutting logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_218",
+    "question": "What is pointcut in AOP?",
+    "answer": "It defines where advice should be applied.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_219",
+    "question": "What is advice in Spring AOP?",
+    "answer": "Advice is the action taken at a join point.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_220",
+    "question": "What is REST in Java Spring?",
+    "answer": "REST is an architectural style for building web APIs.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_221",
+    "question": "What is JSON in Spring Boot?",
+    "answer": "JSON is a lightweight format for data exchange in APIs.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_222",
+    "question": "What is Tomcat in Spring Boot?",
+    "answer": "Tomcat is the embedded server used to run Spring Boot apps.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_223",
+    "question": "What is WAR file?",
+    "answer": "WAR is a packaged web application archive for deployment.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_224",
+    "question": "What is JAR file in Spring Boot?",
+    "answer": "JAR is an executable package for Java applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_225",
+    "question": "What is microservice communication?",
+    "answer": "It is how services interact using REST, messaging, or RPC.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_226",
+    "question": "What is Eureka in Spring Cloud?",
+    "answer": "Eureka is a service discovery tool for microservices.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_227",
+    "question": "What is API Gateway?",
+    "answer": "It routes requests to appropriate microservices.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_228",
+    "question": "What is Feign Client?",
+    "answer": "Feign is used for declarative REST API calls in Spring.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_229",
+    "question": "What is Ribbon?",
+    "answer": "Ribbon provides client-side load balancing.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_230",
+    "question": "What is Resilience4j?",
+    "answer": "It provides fault tolerance in microservices.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_231",
+    "question": "What is .NET CLR?",
+    "answer": "CLR is the runtime that executes .NET applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_232",
+    "question": "What is C#?",
+    "answer": "C# is a programming language used in the .NET ecosystem.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_233",
+    "question": "What is .NET runtime?",
+    "answer": "It executes and manages .NET applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_234",
+    "question": "What is NuGet?",
+    "answer": "NuGet is a package manager for .NET libraries.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_235",
+    "question": "What is assembly in .NET?",
+    "answer": "An assembly is a compiled code library in .NET.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_236",
+    "question": "What is DLL?",
+    "answer": "DLL is a dynamic link library used in .NET applications.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_237",
+    "question": "What is interface in C#?",
+    "answer": "An interface defines a contract for classes to implement.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_238",
+    "question": "What is abstract class in C#?",
+    "answer": "It is a class that cannot be instantiated directly.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_239",
+    "question": "What is polymorphism in C#?",
+    "answer": "It allows methods to behave differently based on object type.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_240",
+    "question": "What is encapsulation?",
+    "answer": "It hides internal object details and exposes only necessary parts.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_241",
+    "question": "What is inheritance in C#?",
+    "answer": "It allows a class to reuse properties and methods of another class.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_242",
+    "question": "What is async/await in C#?",
+    "answer": "It allows asynchronous programming without blocking threads.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_243",
+    "question": "What is Task in .NET?",
+    "answer": "Task represents an asynchronous operation.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_244",
+    "question": "What is thread in .NET?",
+    "answer": "A thread is a unit of execution in a program.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_245",
+    "question": "What is garbage collector in .NET?",
+    "answer": "It automatically frees unused memory.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_246",
+    "question": "What is boxing in C#?",
+    "answer": "Boxing converts value types to object types.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_247",
+    "question": "What is unboxing?",
+    "answer": "Unboxing extracts value type from an object.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_248",
+    "question": "What is LINQ to SQL?",
+    "answer": "It allows querying SQL databases using LINQ syntax.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_249",
+    "question": "What is MVC in ASP.NET Core?",
+    "answer": "It separates application into model, view, and controller.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_250",
+    "question": "What is Razor Pages?",
+    "answer": "Razor Pages is a page-based web programming model.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_251",
+    "question": "What is Web API in ASP.NET Core?",
+    "answer": "It builds HTTP services that clients can consume.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_252",
+    "question": "What is middleware pipeline?",
+    "answer": "It processes HTTP requests in a sequence of components.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_253",
+    "question": "What is Kestrel server?",
+    "answer": "Kestrel is a cross-platform web server for .NET apps.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_web_254",
+    "question": "What is configuration binding in .NET?",
+    "answer": "It maps configuration values to strongly typed objects.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "tech_sec_1",
+    "question": "What is cybersecurity?",
+    "answer": "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_2",
+    "question": "What is a firewall?",
+    "answer": "A firewall is a security system that monitors and controls network traffic.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_3",
+    "question": "What is encryption?",
+    "answer": "Encryption is the process of converting data into a secure coded format.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_4",
+    "question": "What is decryption?",
+    "answer": "Decryption is the process of converting encrypted data back to readable form.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_5",
+    "question": "What is symmetric encryption?",
+    "answer": "Symmetric encryption uses the same key for encryption and decryption.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_6",
+    "question": "What is asymmetric encryption?",
+    "answer": "Asymmetric encryption uses a public key and a private key.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_7",
+    "question": "What is SSL/TLS?",
+    "answer": "SSL/TLS are protocols that secure communication over a network.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_8",
+    "question": "What is HTTPS?",
+    "answer": "HTTPS is a secure version of HTTP using SSL/TLS encryption.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_9",
+    "question": "What is a virus?",
+    "answer": "A virus is malicious software that spreads and damages systems.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_10",
+    "question": "What is malware?",
+    "answer": "Malware is any software designed to harm or exploit systems.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_11",
+    "question": "What is ransomware?",
+    "answer": "Ransomware locks or encrypts data and demands payment for release.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_12",
+    "question": "What is phishing?",
+    "answer": "Phishing is a social engineering attack to steal sensitive information.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_13",
+    "question": "What is spear phishing?",
+    "answer": "Spear phishing is a targeted phishing attack on specific individuals.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_14",
+    "question": "What is a DDoS attack?",
+    "answer": "A DDoS attack overwhelms a system with traffic to make it unavailable.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_15",
+    "question": "What is a DoS attack?",
+    "answer": "A DoS attack floods a system with requests to disrupt service.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_16",
+    "question": "What is a zero-day vulnerability?",
+    "answer": "A zero-day is a security flaw unknown to developers and unpatched.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_17",
+    "question": "What is penetration testing?",
+    "answer": "Penetration testing is simulating attacks to find system vulnerabilities.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_18",
+    "question": "What is ethical hacking?",
+    "answer": "Ethical hacking involves legally testing systems for security weaknesses.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_19",
+    "question": "What is vulnerability scanning?",
+    "answer": "It is the process of identifying security weaknesses in systems.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_20",
+    "question": "What is patch management?",
+    "answer": "Patch management is updating software to fix security issues.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_21",
+    "question": "What is multi-factor authentication (MFA)?",
+    "answer": "MFA requires multiple forms of verification to access accounts.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_22",
+    "question": "What is a brute force attack?",
+    "answer": "A brute force attack tries many password combinations to gain access.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_23",
+    "question": "What is a dictionary attack?",
+    "answer": "A dictionary attack uses common words to guess passwords.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_24",
+    "question": "What is hashing in security?",
+    "answer": "Hashing converts data into a fixed-length secure string.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_25",
+    "question": "What is SHA-256?",
+    "answer": "SHA-256 is a cryptographic hashing algorithm.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_26",
+    "question": "What is MD5?",
+    "answer": "MD5 is a hashing algorithm now considered insecure.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_27",
+    "question": "What is a security token?",
+    "answer": "A security token is a digital object used for authentication.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_28",
+    "question": "What is OAuth?",
+    "answer": "OAuth is an authorization framework for third-party access.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_29",
+    "question": "What is SSO?",
+    "answer": "Single Sign-On allows access with one login across systems.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_30",
+    "question": "What is IAM?",
+    "answer": "Identity and Access Management controls user access to resources.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_31",
+    "question": "What is least privilege principle?",
+    "answer": "Users should have only the minimum access required.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_32",
+    "question": "What is network segmentation?",
+    "answer": "Dividing a network into smaller secure sections.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_33",
+    "question": "What is a VPN?",
+    "answer": "A VPN creates a secure encrypted connection over the internet.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_34",
+    "question": "What is a proxy server?",
+    "answer": "A proxy server acts as an intermediary between user and internet.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_35",
+    "question": "What is intrusion detection system (IDS)?",
+    "answer": "IDS monitors network traffic for suspicious activity.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_36",
+    "question": "What is intrusion prevention system (IPS)?",
+    "answer": "IPS detects and blocks malicious network activity.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_37",
+    "question": "What is a security policy?",
+    "answer": "A set of rules defining how security is managed in an organization.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_38",
+    "question": "What is social engineering?",
+    "answer": "Manipulating people to reveal confidential information.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_39",
+    "question": "What is a trojan horse?",
+    "answer": "Malware disguised as legitimate software.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_40",
+    "question": "What is spyware?",
+    "answer": "Software that secretly collects user information.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_41",
+    "question": "What is adware?",
+    "answer": "Software that displays unwanted advertisements.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_42",
+    "question": "What is a botnet?",
+    "answer": "A network of infected devices controlled by an attacker.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_43",
+    "question": "What is endpoint security?",
+    "answer": "Protection of devices like laptops and phones from attacks.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_44",
+    "question": "What is data breach?",
+    "answer": "Unauthorized access to sensitive data.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_45",
+    "question": "What is log monitoring?",
+    "answer": "Analyzing logs to detect suspicious activities.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_46",
+    "question": "What is SIEM?",
+    "answer": "Security Information and Event Management system.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_47",
+    "question": "What is threat intelligence?",
+    "answer": "Information used to understand and prevent cyber threats.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_48",
+    "question": "What is cryptography?",
+    "answer": "The study of securing communication through encryption.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_49",
+    "question": "What is digital signature?",
+    "answer": "A cryptographic method to verify authenticity of data.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_50",
+    "question": "What is certificate authority (CA)?",
+    "answer": "An entity that issues digital certificates for security.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_51",
+    "question": "What is SSL certificate?",
+    "answer": "An SSL certificate verifies the identity of a website and enables encrypted communication.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_52",
+    "question": "What is public key infrastructure (PKI)?",
+    "answer": "PKI is a system for managing digital certificates and encryption keys.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_53",
+    "question": "What is session hijacking?",
+    "answer": "Session hijacking is taking control of a user’s active session.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_54",
+    "question": "What is cross-site scripting (XSS)?",
+    "answer": "XSS is an attack that injects malicious scripts into web pages.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_55",
+    "question": "What is SQL injection?",
+    "answer": "SQL injection is an attack that manipulates database queries via input fields.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_56",
+    "question": "What is cross-site request forgery (CSRF)?",
+    "answer": "CSRF tricks a user into performing unwanted actions on a trusted site.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_57",
+    "question": "What is secure coding?",
+    "answer": "Secure coding is writing software that prevents vulnerabilities and attacks.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_58",
+    "question": "What is fuzz testing?",
+    "answer": "Fuzz testing sends random inputs to find security flaws in software.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_59",
+    "question": "What is threat modeling?",
+    "answer": "Threat modeling identifies and evaluates potential security threats.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_60",
+    "question": "What is risk assessment in cybersecurity?",
+    "answer": "It is the process of identifying and evaluating security risks.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_61",
+    "question": "What is security audit?",
+    "answer": "A security audit evaluates systems for compliance and vulnerabilities.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_62",
+    "question": "What is malware analysis?",
+    "answer": "Malware analysis studies malicious software behavior and impact.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_63",
+    "question": "What is sandboxing?",
+    "answer": "Sandboxing runs programs in a restricted environment for safety.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_64",
+    "question": "What is honeypot?",
+    "answer": "A honeypot is a system designed to attract attackers for study.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_65",
+    "question": "What is DLP (Data Loss Prevention)?",
+    "answer": "DLP prevents sensitive data from being leaked or lost.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_66",
+    "question": "What is endpoint detection and response (EDR)?",
+    "answer": "EDR monitors and responds to threats on endpoints.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_67",
+    "question": "What is security patching?",
+    "answer": "Security patching fixes vulnerabilities in software.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_68",
+    "question": "What is insider threat?",
+    "answer": "An insider threat comes from within the organization.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_69",
+    "question": "What is brute force protection?",
+    "answer": "It prevents repeated password guessing attempts.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_70",
+    "question": "What is password hashing?",
+    "answer": "It securely stores passwords as irreversible hashes.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_71",
+    "question": "What is salt in hashing?",
+    "answer": "Salt is random data added to passwords before hashing.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_72",
+    "question": "What is penetration testing report?",
+    "answer": "It documents vulnerabilities found during testing.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_73",
+    "question": "What is cybersecurity framework?",
+    "answer": "A framework provides guidelines for managing security risks.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_74",
+    "question": "What is NIST framework?",
+    "answer": "A cybersecurity framework developed by the U.S. government.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_75",
+    "question": "What is ISO 27001?",
+    "answer": "An international standard for information security management.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_76",
+    "question": "What is security awareness training?",
+    "answer": "Training users to recognize and prevent cyber threats.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_77",
+    "question": "What is phishing email detection?",
+    "answer": "Identifying fraudulent emails attempting to steal information.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_78",
+    "question": "What is URL filtering?",
+    "answer": "Blocking access to malicious or unwanted websites.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_79",
+    "question": "What is network sniffing?",
+    "answer": "Monitoring network traffic to capture data packets.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_80",
+    "question": "What is ARP spoofing?",
+    "answer": "An attack that redirects network traffic to a malicious device.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_81",
+    "question": "What is DNS spoofing?",
+    "answer": "Manipulating DNS responses to redirect users to fake sites.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_82",
+    "question": "What is IP spoofing?",
+    "answer": "Forging IP addresses to hide attacker identity.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_83",
+    "question": "What is MAC address filtering?",
+    "answer": "Restricting network access based on MAC addresses.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_84",
+    "question": "What is wireless security?",
+    "answer": "Protecting Wi-Fi networks from unauthorized access.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_85",
+    "question": "What is WPA2?",
+    "answer": "A Wi-Fi security protocol used to secure wireless networks.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_86",
+    "question": "What is WPA3?",
+    "answer": "The latest Wi-Fi security protocol with stronger encryption.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_87",
+    "question": "What is firmware security?",
+    "answer": "Protecting low-level software from malicious modifications.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_88",
+    "question": "What is secure boot?",
+    "answer": "A process ensuring only trusted software runs at startup.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_89",
+    "question": "What is biometric authentication?",
+    "answer": "Authentication using physical traits like fingerprints.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_90",
+    "question": "What is role-based access control (RBAC)?",
+    "answer": "Access is granted based on user roles.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_91",
+    "question": "What is disaster recovery?",
+    "answer": "Processes to restore systems after a cyber incident.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_92",
+    "question": "What is business continuity?",
+    "answer": "Ensuring operations continue during disruptions.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_93",
+    "question": "What is vulnerability management?",
+    "answer": "Identifying and fixing security weaknesses continuously.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_94",
+    "question": "What is threat hunting?",
+    "answer": "Proactively searching for hidden cyber threats.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_95",
+    "question": "What is dark web monitoring?",
+    "answer": "Tracking stolen or leaked data on the dark web.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_96",
+    "question": "What is cyber forensics?",
+    "answer": "Investigating cyber crimes using digital evidence.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_97",
+    "question": "What is incident response?",
+    "answer": "Actions taken to handle and recover from security incidents.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_98",
+    "question": "What is log forensics?",
+    "answer": "Analyzing logs to investigate security breaches.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_99",
+    "question": "What is cyber kill chain?",
+    "answer": "A model describing stages of a cyber attack.",
+    "domain": "Cyber Security"
+  },
+  {
+    "id": "tech_sec_100",
+    "question": "What is zero trust security model?",
+    "answer": "A model where no user or system is trusted by default.",
+    "domain": "Cyber Security"
+  }
+
+]

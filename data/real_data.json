@@ -1,0 +1,1204 @@
+[
+  {
+    "id": "real_web_1",
+    "question": "Your Spring Boot API response time suddenly increased in production. What do you check first?",
+    "answer": "Check logs, database queries, external service calls, CPU/memory usage, and recent deployments.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_2",
+    "question": "A Spring Boot service is consuming too much memory. How do you investigate?",
+    "answer": "Analyze heap dumps, monitor garbage collection, and identify memory leaks or heavy object creation.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_3",
+    "question": "Your .NET API is slow under high traffic. What do you do?",
+    "answer": "Check thread pool usage, database performance, caching strategy, and scaling configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_4",
+    "question": "A Spring Boot application fails after deploying to production but works locally. Why?",
+    "answer": "Check environment configuration, missing properties, database connection differences, and profile settings.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_5",
+    "question": "Your C# API works fine but intermittently returns 500 errors. What do you investigate?",
+    "answer": "Inspect logs, exception traces, external dependencies, and race conditions.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_6",
+    "question": "A database query in your Spring app is very slow. What do you do?",
+    "answer": "Analyze query execution plan, add indexes, reduce joins, and optimize ORM fetching strategy.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_7",
+    "question": "Your .NET application crashes under load. How do you debug it?",
+    "answer": "Check memory usage, thread exhaustion, logs, and enable profiling tools.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_8",
+    "question": "Users report authentication failures in your Spring Security app. What do you check?",
+    "answer": "Check token validation, session handling, user roles, and security configuration changes.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_9",
+    "question": "Your API returns outdated data even after updates. Why?",
+    "answer": "Check caching layers, CDN, database replication lag, and cache invalidation logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_10",
+    "question": "A .NET microservice stops responding randomly. What do you investigate?",
+    "answer": "Check deadlocks, service dependencies, network issues, and resource limits.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_11",
+    "question": "Your Spring Boot app fails during peak traffic. What is your first action?",
+    "answer": "Check server load, autoscaling configuration, and database bottlenecks.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_12",
+    "question": "A REST API returns inconsistent data across requests. Why?",
+    "answer": "Check caching, race conditions, and database transaction isolation levels.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_13",
+    "question": "Your .NET API has high CPU usage. How do you identify the cause?",
+    "answer": "Use profiling tools, analyze hot paths, and inspect inefficient loops or recursion.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_14",
+    "question": "A Spring Boot deployment breaks only in production. What do you do?",
+    "answer": "Compare environment variables, dependencies, and configuration differences.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_15",
+    "question": "Users experience slow login in your C# application. Why?",
+    "answer": "Check authentication provider latency, database queries, and external identity services.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_16",
+    "question": "Your Spring Boot service cannot connect to the database after deployment. Why?",
+    "answer": "Check connection strings, firewall rules, credentials, and network access.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_17",
+    "question": "Your .NET API has memory leaks. How do you confirm it?",
+    "answer": "Monitor memory growth, analyze heap dumps, and inspect object lifecycle.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_18",
+    "question": "A Spring microservice communication fails intermittently. What do you check?",
+    "answer": "Check service discovery, network latency, retries, and circuit breaker configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_19",
+    "question": "Your API response size is too large and slows down clients. What do you do?",
+    "answer": "Implement pagination, filtering, compression, and DTO optimization.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_20",
+    "question": "A .NET service throws timeout errors under load. Why?",
+    "answer": "Check database latency, thread pool saturation, and external API delays.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_21",
+    "question": "Your Spring Boot app logs are missing critical errors. What happened?",
+    "answer": "Check logging configuration, log levels, and external logging service setup.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_22",
+    "question": "API requests suddenly spike and overload your service. What do you do?",
+    "answer": "Implement rate limiting, scaling, and investigate traffic source.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_23",
+    "question": "Your authentication tokens are being rejected after some time. Why?",
+    "answer": "Check token expiration, clock synchronization, and refresh token flow.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_24",
+    "question": "A Spring Boot batch job is taking too long. How do you optimize it?",
+    "answer": "Use parallel processing, optimize queries, and reduce unnecessary operations.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_25",
+    "question": "Your .NET API behaves differently on Linux vs Windows. Why?",
+    "answer": "Check environment differences, file paths, casing sensitivity, and dependencies.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_26",
+    "question": "A Spring Security role-based system is not restricting access properly. What do you check?",
+    "answer": "Check annotations, role mappings, and filter chain configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_27",
+    "question": "Your API gateway is causing delays in request processing. Why?",
+    "answer": "Check routing rules, network latency, and rate limiting configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_28",
+    "question": "A .NET background service stops running after deployment. What happened?",
+    "answer": "Check hosting configuration, service registration, and runtime errors.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_29",
+    "question": "Your Spring Boot app works in staging but fails in production. Why?",
+    "answer": "Check environment variables, secrets, and external service connectivity.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_30",
+    "question": "API latency increases when database load is high. What do you do?",
+    "answer": "Add indexing, caching, connection pooling, and query optimization.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_31",
+    "question": "Your .NET app crashes without clear logs. How do you debug?",
+    "answer": "Enable detailed logging, use crash dumps, and profiling tools.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_32",
+    "question": "Spring Boot memory usage grows continuously over time. Why?",
+    "answer": "Possible memory leak, unclosed resources, or cache misconfiguration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_33",
+    "question": "Your API returns duplicate records unexpectedly. What do you check?",
+    "answer": "Check joins, database constraints, and ORM mapping issues.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_34",
+    "question": "A .NET API fails only when deployed behind a load balancer. Why?",
+    "answer": "Check sticky sessions, headers, and stateless design issues.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_35",
+    "question": "Spring Boot logs show high garbage collection activity. What does it mean?",
+    "answer": "It indicates memory pressure or inefficient object creation.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_36",
+    "question": "Your API is fine locally but slow in Docker. Why?",
+    "answer": "Check container resource limits and network configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_37",
+    "question": "A .NET API has high response variability. What causes it?",
+    "answer": "Thread contention, external services, or inconsistent caching.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_38",
+    "question": "Spring Boot service discovery is failing. What do you check?",
+    "answer": "Check Eureka/registry health, network, and service registration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_39",
+    "question": "Your API returns 401 errors randomly. Why?",
+    "answer": "Token expiration, misconfigured authentication, or clock drift.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_40",
+    "question": "A .NET app performs poorly after scaling. Why?",
+    "answer": "Shared database bottleneck, improper scaling strategy, or caching issues.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_41",
+    "question": "Spring Boot app fails during deserialization of JSON. Why?",
+    "answer": "Mismatch in DTO structure or invalid JSON format.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_42",
+    "question": "Your API logs are too noisy in production. What do you do?",
+    "answer": "Adjust log levels and centralize logging strategy.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_43",
+    "question": "A .NET API is vulnerable to slow performance attacks. What is missing?",
+    "answer": "Rate limiting, request validation, or input sanitization.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_44",
+    "question": "Your Spring Boot app has inconsistent transaction behavior. Why?",
+    "answer": "Missing @Transactional or incorrect propagation settings.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_45",
+    "question": "API suddenly stops scaling horizontally. What do you check?",
+    "answer": "Statelessness, session management, and external dependencies.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_46",
+    "question": "A .NET service fails when external API is down. What should you implement?",
+    "answer": "Circuit breaker, retries, and fallback mechanisms.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_47",
+    "question": "Spring Boot startup time is very slow. Why?",
+    "answer": "Too many dependencies, auto-configuration overhead, or heavy initialization.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_48",
+    "question": "Your API works but database connections are exhausted. Why?",
+    "answer": "Connection pool misconfiguration or leaks.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_49",
+    "question": "A .NET application behaves differently in production logs. Why?",
+    "answer": "Different logging configuration or environment settings.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_50",
+    "question": "Your Spring Boot API needs to handle 10x more traffic. What do you do?",
+    "answer": "Scale horizontally, add caching, optimize DB, and introduce load balancing.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_51",
+    "question": "Your API latency doubled after deployment. What do you check first?",
+    "answer": "Check logs, traces, DB query plans, rollback risk, and hot-path bottlenecks.",
+    "domain": "Développement Web"
+
+  },
+  {
+    "id": "real_web_52",
+    "question": "Your Next.js app is slow on first load. What do you investigate?",
+    "answer": "Check server-side rendering performance, bundle size, image optimization, and blocking scripts.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_53",
+    "question": "A Next.js page shows stale data after deployment. Why?",
+    "answer": "Check caching strategy, ISR revalidation time, and CDN cache invalidation.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_54",
+    "question": "Your API route in Next.js works locally but fails in production. Why?",
+    "answer": "Check environment variables, serverless limits, and deployment configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_55",
+    "question": "A Next.js app crashes when using SSR. What do you check?",
+    "answer": "Check server-side code for browser-only APIs, undefined variables, and data fetching errors.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_56",
+    "question": "Your Next.js image optimization is not working. Why?",
+    "answer": "Check next/image configuration, external domains, and loader settings.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_57",
+    "question": "Pages in Next.js are loading slowly after adding SSR. What happened?",
+    "answer": "SSR adds server processing time; check API calls and caching strategy.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_58",
+    "question": "Your Next.js routing suddenly breaks after adding a new page. Why?",
+    "answer": "Check file-based routing conflicts, dynamic routes, and folder structure.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_59",
+    "question": "A dynamic route in Next.js returns 404 unexpectedly. Why?",
+    "answer": "Check getStaticPaths, fallback settings, and route parameter mismatch.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_60",
+    "question": "Your Next.js app uses too much client-side JavaScript. What do you do?",
+    "answer": "Move logic to server components and reduce client-side hydration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_61",
+    "question": "A Next.js deployment on Vercel fails. What do you check first?",
+    "answer": "Check build logs, environment variables, and dependency issues.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_62",
+    "question": "Your ISR page is not updating after revalidation. Why?",
+    "answer": "Check revalidate time, API response, and caching headers.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_63",
+    "question": "Your Next.js API route is timing out. What do you investigate?",
+    "answer": "Check serverless execution limits, slow database queries, and external API calls.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_64",
+    "question": "A Next.js app works in development but not after build. Why?",
+    "answer": "Check production build errors, environment variables, and SSR issues.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_65",
+    "question": "Your Next.js app has hydration errors. What causes them?",
+    "answer": "Mismatch between server-rendered HTML and client-side React rendering.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_66",
+    "question": "Your Next.js app has very large bundle size. What do you do?",
+    "answer": "Analyze bundle, enable code splitting, and remove unused dependencies.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_67",
+    "question": "API calls in Next.js are duplicated multiple times. Why?",
+    "answer": "Check React strict mode, useEffect dependencies, and caching logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_68",
+    "question": "Your Next.js middleware is slowing down requests. Why?",
+    "answer": "Check heavy logic inside middleware and unnecessary computations.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_69",
+    "question": "Next.js SSR page shows inconsistent user data. Why?",
+    "answer": "Check session handling, caching, and request-based rendering logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_70",
+    "question": "Your Next.js app fails to load environment variables in production. Why?",
+    "answer": "Check Vercel/hosting config and variable naming (NEXT_PUBLIC_ prefix).",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_71",
+    "question": "A Next.js app is slow on mobile but fast on desktop. Why?",
+    "answer": "Check image sizes, client-side scripts, and mobile network latency.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_72",
+    "question": "Your Next.js app breaks after upgrading version. Why?",
+    "answer": "Check deprecated APIs, routing changes, and dependency compatibility.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_73",
+    "question": "Next.js build is failing due to memory error. What do you do?",
+    "answer": "Increase memory allocation, optimize imports, and reduce build workload.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_74",
+    "question": "Your Next.js app has SEO issues after migration. Why?",
+    "answer": "Check metadata, SSR/SSG usage, and missing Open Graph tags.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_75",
+    "question": "Your Next.js API routes are exposed unintentionally. What happened?",
+    "answer": "Check authentication middleware and route protection.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_76",
+    "question": "Your Next.js app shows flickering UI on navigation. Why?",
+    "answer": "Check client-side state reset and missing layout persistence.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_77",
+    "question": "Your Next.js app has slow navigation between pages. Why?",
+    "answer": "Check prefetching, bundle splitting, and heavy components.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_78",
+    "question": "A Next.js SSR page makes too many API calls. What do you do?",
+    "answer": "Add caching, batch requests, and move logic to server-side data layer.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_79",
+    "question": "Your Next.js app behaves differently in server vs client rendering. Why?",
+    "answer": "Check usage of browser-only APIs and conditional rendering logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_80",
+    "question": "Your Next.js authentication breaks after refresh. Why?",
+    "answer": "Check session persistence, cookies, and token storage strategy.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_81",
+    "question": "Your Next.js app is not updating after code changes in production. Why?",
+    "answer": "Check caching layer, CDN, and deployment pipeline.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_82",
+    "question": "Your Next.js serverless function is cold starting slowly. What do you do?",
+    "answer": "Optimize function size and reduce initialization time.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_83",
+    "question": "Next.js SSR page fails only for some users. Why?",
+    "answer": "Check geographic latency, external API dependency, and edge caching.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_84",
+    "question": "Your Next.js app has inconsistent styling between server and client. Why?",
+    "answer": "Check CSS-in-JS hydration issues or missing styles on server render.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_85",
+    "question": "Your Next.js app is slow due to large images. What do you do?",
+    "answer": "Use next/image optimization, compression, and responsive images.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_86",
+    "question": "Your Next.js app crashes when rendering large lists. Why?",
+    "answer": "Check rendering performance and implement virtualization.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_87",
+    "question": "Your Next.js app has API rate limit errors. What do you do?",
+    "answer": "Implement caching, request batching, and throttling.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_88",
+    "question": "Your Next.js SSR page blocks rendering. Why?",
+    "answer": "Check slow API calls and blocking server-side logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_89",
+    "question": "Your Next.js app has SEO drop after enabling CSR. Why?",
+    "answer": "CSR reduces server-rendered content affecting SEO indexing.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_90",
+    "question": "Your Next.js app shows incorrect locale/language. Why?",
+    "answer": "Check i18n routing and browser locale detection.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_91",
+    "question": "Your Next.js app API calls fail behind firewall. Why?",
+    "answer": "Check network access, CORS, and backend security rules.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_92",
+    "question": "Your Next.js app has memory leaks in development mode. Why?",
+    "answer": "Check React state cleanup and event listener removal.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_93",
+    "question": "Your Next.js app is slow after adding analytics scripts. Why?",
+    "answer": "Third-party scripts block rendering and increase load time.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_94",
+    "question": "Your Next.js app fails during SSR due to undefined window object. Why?",
+    "answer": "Server-side rendering does not have browser APIs like window.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_95",
+    "question": "Your Next.js API route works but returns empty data in production. Why?",
+    "answer": "Check environment variables and production database connection.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_96",
+    "question": "Your Next.js app experiences flickering during hydration. Why?",
+    "answer": "Mismatch between SSR HTML and client-side React state.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_97",
+    "question": "Your Next.js app has slow build times. What do you do?",
+    "answer": "Optimize dependencies, reduce pages complexity, and enable caching.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_98",
+    "question": "Your Next.js app is not updating API cache properly. Why?",
+    "answer": "Check revalidation strategy and stale cache configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_99",
+    "question": "Your Next.js app behaves differently in edge runtime. Why?",
+    "answer": "Edge runtime has limited Node.js APIs support.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_100",
+    "question": "Your Next.js app needs to scale to millions of users. What do you focus on?",
+    "answer": "Optimize caching, use CDN, reduce SSR load, and implement edge functions.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_101",
+    "question": "Your Laravel API suddenly becomes very slow after deployment. What do you check?",
+    "answer": "Check database queries, missing indexes, caching, and recent code changes.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_102",
+    "question": "A Laravel application works locally but fails on the server. Why?",
+    "answer": "Check environment variables, PHP version mismatch, and missing dependencies.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_103",
+    "question": "Your Laravel request times out when fetching large data. What do you do?",
+    "answer": "Implement pagination, optimize queries, and use chunking.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_104",
+    "question": "Laravel authentication stops working after deployment. Why?",
+    "answer": "Check session configuration, cookies domain, and cache issues.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_105",
+    "question": "Your Laravel queue jobs are not processing. What do you check?",
+    "answer": "Check queue worker status, driver configuration, and failed jobs table.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_106",
+    "question": "A Laravel API returns 500 errors intermittently. Why?",
+    "answer": "Check logs, exception traces, and external service failures.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_107",
+    "question": "Your Laravel app runs slowly under high traffic. What do you do?",
+    "answer": "Enable caching, optimize queries, and scale database/server resources.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_108",
+    "question": "Laravel Eloquent queries are causing performance issues. Why?",
+    "answer": "Check N+1 query problem and missing eager loading.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_109",
+    "question": "Your Laravel migration fails in production. What do you investigate?",
+    "answer": "Check database permissions, schema conflicts, and migration order.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_110",
+    "question": "Laravel API returns outdated data. Why?",
+    "answer": "Check cache layers and missing cache invalidation.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_111",
+    "question": "Your Laravel file upload is failing randomly. What do you check?",
+    "answer": "Check file size limits, permissions, and storage configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_112",
+    "question": "Laravel session keeps resetting. Why?",
+    "answer": "Check session driver, cookie configuration, and domain mismatch.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_113",
+    "question": "Your Laravel API has high memory usage. What do you do?",
+    "answer": "Check large dataset loading, memory leaks, and inefficient loops.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_114",
+    "question": "Laravel broadcast events are not triggering. Why?",
+    "answer": "Check queue workers, broadcast driver, and event registration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_115",
+    "question": "Your Laravel app shows inconsistent results in production. Why?",
+    "answer": "Check caching, race conditions, and database replication delay.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_116",
+    "question": "Laravel API authentication works for some users but not others. Why?",
+    "answer": "Check token expiration, guards configuration, and user roles.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_117",
+    "question": "Your Laravel scheduler is not running tasks. What do you check?",
+    "answer": "Check cron setup, scheduler command, and server configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_118",
+    "question": "Laravel jobs are stuck in queue. Why?",
+    "answer": "Check queue worker, failed jobs, and Redis/database connection.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_119",
+    "question": "Your Laravel API returns wrong validation errors. Why?",
+    "answer": "Check validation rules and request data formatting.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_120",
+    "question": "Laravel application crashes after increasing traffic. Why?",
+    "answer": "Check server resources, database overload, and missing caching.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_121",
+    "question": "Your Laravel API response is slow due to external API calls. What do you do?",
+    "answer": "Use caching, async jobs, or queue processing.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_122",
+    "question": "Laravel logs are missing critical errors. Why?",
+    "answer": "Check logging configuration and log level settings.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_123",
+    "question": "Your Laravel app behaves differently on local vs production. Why?",
+    "answer": "Check environment config, caching, and PHP version differences.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_124",
+    "question": "Laravel API returns duplicate records. Why?",
+    "answer": "Check joins, relationships, and query grouping.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_125",
+    "question": "Your Laravel app has slow login performance. What do you do?",
+    "answer": "Optimize authentication queries and reduce unnecessary checks.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_126",
+    "question": "Laravel API rate limit is blocking valid users. Why?",
+    "answer": "Check throttle configuration and adjust limits.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_127",
+    "question": "Your Laravel app fails under concurrent requests. Why?",
+    "answer": "Check database locking, transactions, and race conditions.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_128",
+    "question": "Laravel cache is not updating after data changes. Why?",
+    "answer": "Check cache invalidation and expiration settings.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_129",
+    "question": "Your Laravel API is exposed to unauthorized access. What do you do?",
+    "answer": "Add authentication middleware and fix route protection.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_130",
+    "question": "Laravel file storage works locally but not in production. Why?",
+    "answer": "Check filesystem driver and storage permissions.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_131",
+    "question": "Your Laravel API returns inconsistent JSON structure. Why?",
+    "answer": "Check API resource formatting and transformation layer.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_132",
+    "question": "Laravel database connections are exhausted. Why?",
+    "answer": "Check connection pool limits and leaks.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_133",
+    "question": "Your Laravel app is slow due to N+1 queries. What do you do?",
+    "answer": "Use eager loading with with() to reduce queries.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_134",
+    "question": "Laravel API crashes when payload is large. Why?",
+    "answer": "Check request size limits and memory configuration.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_135",
+    "question": "Your Laravel app fails after cache clearing. Why?",
+    "answer": "Check missing config caching and session rebuilding.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_136",
+    "question": "Laravel Horizon shows failed queue jobs. What do you do?",
+    "answer": "Inspect job logs and retry failed jobs.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_137",
+    "question": "Your Laravel API is vulnerable to SQL injection. Why?",
+    "answer": "Check raw queries and use parameter binding.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_138",
+    "question": "Laravel application slows down over time. Why?",
+    "answer": "Check memory leaks, cache buildup, and unoptimized queries.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_139",
+    "question": "Your Laravel API returns wrong HTTP status codes. Why?",
+    "answer": "Check exception handling and response formatting.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_140",
+    "question": "Laravel application fails during deployment pipeline. Why?",
+    "answer": "Check missing dependencies and build scripts.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_141",
+    "question": "Your Laravel app experiences high DB load. What do you do?",
+    "answer": "Optimize queries, add caching, and reduce unnecessary requests.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_142",
+    "question": "Laravel API is slow only for certain endpoints. Why?",
+    "answer": "Check heavy queries and missing indexes for those endpoints.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_143",
+    "question": "Your Laravel app fails when Redis is down. Why?",
+    "answer": "Check dependency on Redis for cache or sessions.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_144",
+    "question": "Laravel API authentication tokens expire too quickly. Why?",
+    "answer": "Check token TTL and refresh logic.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_145",
+    "question": "Your Laravel app has slow dashboard loading. What do you do?",
+    "answer": "Optimize queries, use caching, and reduce data aggregation cost.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_146",
+    "question": "Laravel API fails after increasing server instances. Why?",
+    "answer": "Check session sharing and stateless architecture issues.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_147",
+    "question": "Your Laravel app has inconsistent timezones. Why?",
+    "answer": "Check timezone configuration in app and database.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_148",
+    "question": "Laravel API returns empty responses intermittently. Why?",
+    "answer": "Check cache inconsistency and race conditions.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_149",
+    "question": "Your Laravel app has slow email sending. What do you do?",
+    "answer": "Use queues to send emails asynchronously.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_web_150",
+    "question": "Laravel application needs to scale to millions of users. What do you focus on?",
+    "answer": "Optimize database, add caching layers, queue jobs, and use load balancing.",
+    "domain": "Web Development"
+  },
+  {
+    "id": "real_ds_1",
+    "question": "You have imbalanced data. What do you do?",
+    "answer": "Use SMOTE, resampling, class weighting, and proper metrics like F1/AUC.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_2",
+    "question": "Your model has high accuracy but performs poorly in production. Why?",
+    "answer": "It may be overfitting, data leakage, or train-test distribution mismatch.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_3",
+    "question": "How do you handle missing values in a dataset?",
+    "answer": "Use imputation techniques like mean/median, model-based imputation, or remove rows depending on context.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_4",
+    "question": "Your dataset has too many features. What do you do?",
+    "answer": "Use feature selection techniques like Lasso, PCA, or tree-based feature importance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_5",
+    "question": "Your model is overfitting. How do you fix it?",
+    "answer": "Use regularization, reduce model complexity, add more data, or apply dropout.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_6",
+    "question": "Your model is underfitting. What do you do?",
+    "answer": "Increase model complexity, add features, or reduce regularization.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_7",
+    "question": "How do you detect outliers in data?",
+    "answer": "Use statistical methods like IQR, Z-score, or visualization techniques like boxplots.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_8",
+    "question": "Your dataset is highly skewed. What do you do?",
+    "answer": "Apply log transformation, Box-Cox, or use robust models.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_9",
+    "question": "How do you evaluate a classification model?",
+    "answer": "Use metrics like accuracy, precision, recall, F1-score, and ROC-AUC.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_10",
+    "question": "Accuracy is high but recall is low. What does it mean?",
+    "answer": "The model misses many positive cases despite overall good accuracy.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_11",
+    "question": "How do you prevent data leakage?",
+    "answer": "Ensure proper train-test split, avoid using future information, and build pipelines correctly.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_12",
+    "question": "Your model training is very slow. What do you do?",
+    "answer": "Reduce features, use sampling, optimize algorithms, or use distributed computing.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_13",
+    "question": "How do you handle categorical variables?",
+    "answer": "Use encoding techniques like one-hot encoding, label encoding, or target encoding.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_14",
+    "question": "What is multicollinearity and how do you fix it?",
+    "answer": "It is correlation between features; fix it using VIF analysis or removing correlated variables.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_15",
+    "question": "Your regression model performs poorly. Why?",
+    "answer": "It may lack feature engineering, have outliers, or incorrect assumptions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_16",
+    "question": "How do you choose a machine learning model?",
+    "answer": "Based on problem type, data size, interpretability, and performance metrics.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_17",
+    "question": "Your clustering results are unclear. What do you do?",
+    "answer": "Try different algorithms, normalize data, and evaluate with silhouette score.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_18",
+    "question": "What is feature engineering in real projects?",
+    "answer": "It is creating useful features from raw data to improve model performance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_19",
+    "question": "Your model is biased. How do you fix it?",
+    "answer": "Use balanced datasets, fairness techniques, and remove biased features.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_20",
+    "question": "How do you handle time series data?",
+    "answer": "Use time-based splits, lag features, and models like ARIMA or LSTM.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_21",
+    "question": "Your model performs well in training but poorly in testing. Why?",
+    "answer": "This indicates overfitting or data leakage.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_22",
+    "question": "How do you scale features?",
+    "answer": "Use normalization or standardization techniques like MinMaxScaler or StandardScaler.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_23",
+    "question": "What is cross-validation?",
+    "answer": "It is a technique to evaluate model performance using multiple train-test splits.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_24",
+    "question": "Why do we split data into train and test sets?",
+    "answer": "To evaluate model performance on unseen data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_25",
+    "question": "What is regularization?",
+    "answer": "It is a technique to reduce overfitting by penalizing large coefficients.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_26",
+    "question": "What is the difference between L1 and L2 regularization?",
+    "answer": "L1 performs feature selection; L2 reduces coefficient magnitude smoothly.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_27",
+    "question": "What is ROC curve?",
+    "answer": "It shows trade-off between true positive rate and false positive rate.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_28",
+    "question": "What is AUC?",
+    "answer": "AUC measures model's ability to distinguish between classes.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_29",
+    "question": "Your dataset is too large. What do you do?",
+    "answer": "Use sampling, distributed processing, or dimensionality reduction.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_30",
+    "question": "How do you deploy a machine learning model?",
+    "answer": "Use APIs, containerization, or cloud services like AWS/GCP/Azure.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_31",
+    "question": "What is model drift?",
+    "answer": "It is when model performance degrades over time due to data changes.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_32",
+    "question": "How do you detect model drift?",
+    "answer": "Monitor performance metrics and input data distribution changes.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_33",
+    "question": "What is confusion matrix?",
+    "answer": "It is a table showing true/false positives and negatives.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_34",
+    "question": "Why do we normalize data?",
+    "answer": "To ensure features are on the same scale for better model performance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_35",
+    "question": "What is PCA?",
+    "answer": "PCA is a technique for reducing dimensionality of data.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_36",
+    "question": "When should you use decision trees?",
+    "answer": "For interpretable models and non-linear relationships.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_37",
+    "question": "What is gradient boosting?",
+    "answer": "It is an ensemble technique that builds models sequentially to reduce errors.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_38",
+    "question": "Why do ensemble models perform better?",
+    "answer": "They combine multiple models to reduce bias and variance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_39",
+    "question": "What is hyperparameter tuning?",
+    "answer": "It is optimizing model parameters for best performance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_40",
+    "question": "What is grid search?",
+    "answer": "It is an exhaustive search over parameter combinations.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_41",
+    "question": "What is random search?",
+    "answer": "It randomly samples hyperparameter combinations.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_42",
+    "question": "Why do we use pipelines in ML?",
+    "answer": "To automate preprocessing and model training steps.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_43",
+    "question": "What is data normalization vs standardization?",
+    "answer": "Normalization scales data to [0,1], standardization centers it around mean 0.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_44",
+    "question": "What is class imbalance impact?",
+    "answer": "It biases model toward majority class.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_45",
+    "question": "How do you handle real-time prediction systems?",
+    "answer": "Use APIs, low-latency models, and caching strategies.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_46",
+    "question": "What is interpretability in ML?",
+    "answer": "It is understanding how models make decisions.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_47",
+    "question": "Why is feature selection important?",
+    "answer": "It reduces overfitting and improves performance.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_48",
+    "question": "What is reinforcement learning used for?",
+    "answer": "It is used for decision-making systems like robotics and games.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_49",
+    "question": "What is unsupervised learning used for?",
+    "answer": "It is used for clustering and pattern discovery.",
+    "domain": "Data Science & IA"
+  },
+  {
+    "id": "real_ds_50",
+    "question": "What is supervised learning?",
+    "answer": "It is learning from labeled data to make predictions.",
+    "domain": "Data Science & IA"
+  }
+
+]
