@@ -1,6 +1,11 @@
 import os
+from pathlib import Path
 
+from dotenv import load_dotenv
 from pinecone import Pinecone
+
+APP_ROOT = Path(__file__).resolve().parent
+load_dotenv(APP_ROOT / ".env")
 
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
