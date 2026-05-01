@@ -25,7 +25,12 @@ PINECONE_MODEL = os.getenv("PINECONE_MODEL", "llama-text-embed-v2")
 
 def _parse_origins() -> list[str]:
     raw = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000")
-    return [origin.strip() for origin in raw.split(",") if origin.strip()]
+    cleaned: list[str] = []
+    for origin in raw.split(","):
+        value = origin.strip().rstrip("/")
+        if value:
+            cleaned.append(value)
+    return cleaned
 
 
 app = FastAPI(title="Mock Exam FastAPI", version="1.0.0")
