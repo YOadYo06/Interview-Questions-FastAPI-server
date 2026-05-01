@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: fastapi-mock-exam
+    env: python
+    runtime: python-3.11
+    plan: free
+    
+    # Build phase
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    
+    # Start command - runs the FastAPI server with uvicorn
+    startCommand: uvicorn fastapi_server:app --host 0.0.0.0 --port $PORT
+    
+    # Environment variables
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: ALLOWED_ORIGINS
+        value: "*"
+      - key: PORT
+        value: 8000
+    
+    # Health check configuration
+    healthCheckPath: /docs
+    
+    # Auto-deploy when GitHub repo is pushed
+    autoDeploy: true
