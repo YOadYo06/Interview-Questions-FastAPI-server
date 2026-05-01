@@ -16,9 +16,7 @@ services:
       - key: PYTHON_VERSION
         value: 3.11
       - key: ALLOWED_ORIGINS
-        value: "*"
-      - key: PORT
-        value: 8000
+        value: "http://localhost:3000,https://mock-exam-ai.vercel.app"
     
     # Health check configuration
     healthCheckPath: /docs

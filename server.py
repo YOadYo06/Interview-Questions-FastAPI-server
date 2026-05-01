@@ -35,10 +35,16 @@ def _parse_origins() -> list[str]:
 
 app = FastAPI(title="Mock Exam FastAPI", version="1.0.0")
 
+_allowed_origins = _parse_origins()
+_allow_credentials = True
+if "*" in _allowed_origins:
+    _allowed_origins = ["*"]
+    _allow_credentials = False
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=_parse_origins(),
-    allow_credentials=True,
+    allow_origins=_allowed_origins,
+    allow_credentials=_allow_credentials,
     allow_methods=["*"],
     allow_headers=["*"],
 )
