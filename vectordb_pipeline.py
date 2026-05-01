@@ -1,12 +1,11 @@
 import os
-from pathlib import Path
 
-import chromadb
-from chromadb.utils import embedding_functions
+from pinecone import Pinecone
 
 
-CHROMA_PATH = os.getenv("CHROMA_PATH", "./chroma_dbs")
-MODEL_NAME = "all-MiniLM-L6-v2"
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
+PINECONE_INDEX = os.getenv("PINECONE_INDEX", "mock-exam")
+PINECONE_MODEL = os.getenv("PINECONE_MODEL", "llama-text-embed-v2")
 DB_NAMES = {
     "hr": "hr_questions",
     "tech": "tech_questions",
@@ -14,52 +13,55 @@ DB_NAMES = {
 }
 
 
-def _get_client():
-    Path(CHROMA_PATH).mkdir(parents=True, exist_ok=True)
-    return chromadb.PersistentClient(path=CHROMA_PATH)
+def _get_index():
+    if not PINECONE_API_KEY:
+        raise RuntimeError("PINECONE_API_KEY is not set")
+    pc = Pinecone(api_key=PINECONE_API_KEY)
+    return pc.Index(PINECONE_INDEX)
 
 
-def _get_or_create_collection(client, name):
-    ef = embedding_functions.SentenceTransformerEmbeddingFunction(model_name=MODEL_NAME)
-    return client.get_or_create_collection(name=name, embedding_function=ef)
+def _embed_query(text: str) -> list[float]:
+    pc = Pinecone(api_key=PINECONE_API_KEY)
+    result = pc.inference.embed(
+        model=PINECONE_MODEL,
+        inputs=[text],
+        parameters={"input_type": "query"},
+    )
+    return result.data[0]["values"]
 
 
-def _query_collection(collection, query_text, category, n_results=2):
+def _query_collection(index, query_text, category, n_results=2):
     if not query_text or not query_text.strip():
         return []
 
     try:
-        if collection.count() == 0:
-            return []
+        query_vec = _embed_query(query_text)
+        results = index.query(
+            top_k=n_results,
+            vector=query_vec,
+            filter={"category": {"$eq": category}},
+            include_metadata=True,
+        )
     except Exception:
         return []
 
-    try:
-        results = collection.query(query_texts=[query_text], n_results=n_results)
-    except Exception as e:
-        msg = str(e).lower()
-        if "nothing found on disk" in msg or "error creating hnsw segment reader" in msg:
-            return []
-        raise
-
-    docs = results.get("documents", [[]])
-    metas = results.get("metadatas", [[]])
-    dists = results.get("distances", [[]])
-    if not docs or not docs[0]:
+    matches = results.get("matches", []) if isinstance(results, dict) else getattr(results, "matches", [])
+    if not matches:
         return []
 
     out = []
-    for i, doc in enumerate(docs[0]):
-        md = metas[0][i] if metas and metas[0] and i < len(metas[0]) else {}
-        dist = dists[0][i] if dists and dists[0] and i < len(dists[0]) else None
-        item_id = md.get("id", f"{category}_{i+1}")
+    for i, match in enumerate(matches, start=1):
+        metadata = getattr(match, "metadata", None) or match.get("metadata", {})
+        score = getattr(match, "score", None) or match.get("score")
+        item_id = getattr(match, "id", None) or match.get("id") or f"{category}_{i}"
+        question = metadata.get("text", "") or metadata.get("question", "")
         out.append(
             {
                 "id": item_id,
-                "question": doc,
-                "answer": md.get("answer", ""),
-                "distance": dist,
-                "category": md.get("category", category),
+                "question": question,
+                "answer": metadata.get("answer", ""),
+                "distance": score,
+                "category": metadata.get("category", category),
             }
         )
     return out
@@ -72,23 +74,19 @@ def run_vectordb_pipeline(
     n_results_by_category: dict[str, int] | None = None,
 ) -> dict:
     """Global VectorDB function: profile -> queried entities from existing Chroma collections."""
-    client = _get_client()
+    index = _get_index()
 
     effective_query = query_text if query_text else cv_profile.get("position", "software engineer")
     queried_entities = {}
     errors = {}
     collection_counts = {}
-    for cat, db_name in DB_NAMES.items():
-        collection = _get_or_create_collection(client, db_name)
-        try:
-            collection_counts[cat] = collection.count()
-        except Exception:
-            collection_counts[cat] = 0
+    for cat in DB_NAMES.keys():
+        collection_counts[cat] = 0
         per_cat_n = n_results_by_category.get(cat, n_results) if n_results_by_category else n_results
         if per_cat_n <= 0:
             queried_entities[cat] = []
             continue
-        queried_entities[cat] = _query_collection(collection, effective_query, cat, n_results=per_cat_n)
+        queried_entities[cat] = _query_collection(index, effective_query, cat, n_results=per_cat_n)
 
     return {
         "query_text": effective_query,
