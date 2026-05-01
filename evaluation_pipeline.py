@@ -1,15 +1,23 @@
-from functools import lru_cache
+import os
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from pinecone import Pinecone
 
 
-MODEL_NAME = "all-MiniLM-L6-v2"
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
+PINECONE_MODEL = os.getenv("PINECONE_MODEL", "llama-text-embed-v2")
 
 
-@lru_cache(maxsize=1)
-def _load_embedder():
-    return SentenceTransformer(MODEL_NAME)
+def _embed_texts(texts: list[str]) -> list[list[float]]:
+    if not PINECONE_API_KEY:
+        raise RuntimeError("PINECONE_API_KEY is not set")
+    pc = Pinecone(api_key=PINECONE_API_KEY)
+    result = pc.inference.embed(
+        model=PINECONE_MODEL,
+        inputs=texts,
+        parameters={"input_type": "passage"},
+    )
+    return [item["values"] for item in result.data]
 
 
 def _feedback_from_score(score_pct: float) -> str:
@@ -22,8 +30,6 @@ def _feedback_from_score(score_pct: float) -> str:
 
 def run_evaluation_pipeline(queried_entities: dict, user_answers: dict) -> dict:
     """Global Evaluation function: queried entities + user answers -> scores and summary."""
-    embedder = _load_embedder()
-
     evaluations = {}
     scores = []
 
@@ -35,7 +41,7 @@ def run_evaluation_pipeline(queried_entities: dict, user_answers: dict) -> dict:
             if not user_answer:
                 continue
 
-            vecs = embedder.encode([user_answer, ideal_answer])
+            vecs = _embed_texts([user_answer, ideal_answer])
             cos_sim = float(np.dot(vecs[0], vecs[1]) / (np.linalg.norm(vecs[0]) * np.linalg.norm(vecs[1])))
             score_pct = round(cos_sim * 100, 1)
             scores.append(score_pct)

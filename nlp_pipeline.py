@@ -1,9 +1,9 @@
+import os
 import re
 import unicodedata
-from functools import lru_cache
 
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
+from pinecone import Pinecone
 
 
 COMPETENCES_DICT = {
@@ -82,53 +82,79 @@ DESCRIPTIONS_DOMAINES = {
 }
 
 
-@lru_cache(maxsize=1)
-def _load_nlp_components():
-    import spacy
+DESCRIPTIONS_DOMAINES_EN = {
+    "Data Science & AI": """
+        I am a data scientist specialized in machine learning and deep learning.
+        I use Python to build predictive models with TensorFlow, PyTorch, Keras, and Scikit-learn.
+    """,
+    "Web Development": """
+        I am a full-stack web developer specialized in HTML, CSS, and JavaScript.
+        I work with React, Angular, Vue, NodeJS, Django, Flask, and FastAPI.
+    """,
+    "Data Engineering": """
+        I am a data engineer focused on data pipelines and warehouses.
+        I work with Hadoop, Spark, Kafka, Airflow, ETL, and data warehouses.
+    """,
+    "DevOps & Cloud": """
+        I am a DevOps engineer focused on cloud and infrastructure.
+        I work with Docker, Kubernetes, AWS, Azure, GCP, Terraform, and Ansible.
+    """,
+    "Cybersecurity": """
+        I am a cybersecurity specialist focused on audits and security analysis.
+        I perform penetration testing and security assessments.
+    """,
+    "Mobile Development": """
+        I am a mobile developer focused on Android and iOS.
+        I build apps with Flutter, React Native, Kotlin, Java, and Swift.
+    """,
+    "Software Engineering": """
+        I am a software engineer focused on architecture and software quality.
+        I work with design patterns, SOLID, testing, and CI/CD.
+    """,
+}
 
-    try:
-        nlp = spacy.load("fr_core_news_sm")
-    except OSError:
-        # Fallback: keep the app functional even when the French model is not installed.
-        nlp = spacy.blank("fr")
-    sbert = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
-    return nlp, sbert
+
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
+PINECONE_MODEL = os.getenv("PINECONE_MODEL", "llama-text-embed-v2")
 
 
-def _clean_text_for_spacy(text: str) -> str:
+def _embed_texts(texts: list[str], input_type: str) -> list[list[float]]:
+    if not PINECONE_API_KEY:
+        raise RuntimeError("PINECONE_API_KEY is not set")
+    pc = Pinecone(api_key=PINECONE_API_KEY)
+    result = pc.inference.embed(
+        model=PINECONE_MODEL,
+        inputs=texts,
+        parameters={"input_type": input_type},
+    )
+    return [item["values"] for item in result.data]
+
+
+def _clean_text(text: str) -> str:
     text = re.sub(r"\n+", " ", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip().lower()
 
 
-def _extract_competences(text_for_spacy: str, nlp) -> dict:
-    if "competence_ruler" in nlp.pipe_names:
-        nlp.remove_pipe("competence_ruler")
-
-    if "ner" in nlp.pipe_names:
-        ruler = nlp.add_pipe("entity_ruler", name="competence_ruler", before="ner")
-    else:
-        ruler = nlp.add_pipe("entity_ruler", name="competence_ruler")
-    patterns = []
+def _extract_competences(text_for_match: str) -> dict:
+    competences_trouvees: dict[str, list[str]] = {}
     for categorie, competences in COMPETENCES_DICT.items():
         for comp in competences:
-            patterns.append({"label": categorie.upper(), "pattern": comp})
-    ruler.add_patterns(patterns)
-
-    doc = nlp(text_for_spacy)
-    competences_trouvees = {}
-    for ent in doc.ents:
-        categorie = ent.label_.lower()
-        competence = ent.text.strip()
-        if categorie in COMPETENCES_DICT:
-            competences_trouvees.setdefault(categorie, [])
-            if competence not in competences_trouvees[categorie]:
-                competences_trouvees[categorie].append(competence)
-
+            pattern = r"\b" + re.escape(comp.lower()) + r"\b"
+            if re.search(pattern, text_for_match):
+                competences_trouvees.setdefault(categorie, [])
+                if comp not in competences_trouvees[categorie]:
+                    competences_trouvees[categorie].append(comp)
     return competences_trouvees
 
 
-def _identify_domain(competences_trouvees: dict, sbert):
+def _cosine_similarity(vec_a: list[float], vec_b: list[float]) -> float:
+    a = np.array(vec_a)
+    b = np.array(vec_b)
+    return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b)))
+
+
+def _identify_domain(competences_trouvees: dict):
     texte_competences = " ".join([
         comp
         for comps in competences_trouvees.values()
@@ -138,14 +164,37 @@ def _identify_domain(competences_trouvees: dict, sbert):
     if not texte_competences:
         return "Genie Logiciel", []
 
-    vecteur_cv = sbert.encode([texte_competences])
     domaines = list(DESCRIPTIONS_DOMAINES.keys())
-    descriptions = list(DESCRIPTIONS_DOMAINES.values())
-    vecteurs_domaines = sbert.encode(descriptions)
+    descriptions_fr = [DESCRIPTIONS_DOMAINES[d] for d in domaines]
+    descriptions_en = [
+        DESCRIPTIONS_DOMAINES_EN[_map_domain_to_english(d)] for d in domaines
+    ]
 
-    similarities = cosine_similarity(vecteur_cv, vecteurs_domaines)[0]
+    vecteur_cv = _embed_texts([texte_competences], input_type="query")[0]
+    vecteurs_fr = _embed_texts(descriptions_fr, input_type="passage")
+    vecteurs_en = _embed_texts(descriptions_en, input_type="passage")
+
+    similarities = []
+    for vec_fr, vec_en in zip(vecteurs_fr, vecteurs_en):
+        score_fr = _cosine_similarity(vecteur_cv, vec_fr)
+        score_en = _cosine_similarity(vecteur_cv, vec_en)
+        similarities.append(max(score_fr, score_en))
+
     scores = sorted(zip(domaines, similarities), key=lambda x: x[1], reverse=True)
     return scores[0][0], scores
+
+
+def _map_domain_to_english(domaine_fr: str) -> str:
+    mapping = {
+        "Data Science & IA": "Data Science & AI",
+        "Developpement Web": "Web Development",
+        "Data Engineering": "Data Engineering",
+        "DevOps & Cloud": "DevOps & Cloud",
+        "Cybersecurite": "Cybersecurity",
+        "Developpement Mobile": "Mobile Development",
+        "Genie Logiciel": "Software Engineering",
+    }
+    return mapping.get(domaine_fr, "Software Engineering")
 
 
 def _normaliser(text: str) -> str:
@@ -209,11 +258,10 @@ def _detecter_niveau(raw_text: str):
 
 def run_nlp_pipeline(cv_text: str) -> dict:
     """Global NLP function: CV text -> structured profile."""
-    nlp, sbert = _load_nlp_components()
-
-    text_for_spacy = _clean_text_for_spacy(cv_text)
-    competences = _extract_competences(text_for_spacy, nlp)
-    domaine, scores = _identify_domain(competences, sbert)
+    text_for_match = _clean_text(cv_text)
+    competences = _extract_competences(text_for_match)
+    domaine, scores = _identify_domain(competences)
+    domaine_en = _map_domain_to_english(domaine)
     niveau, annee = _detecter_niveau(cv_text)
 
     tech_stack = []
@@ -226,17 +274,30 @@ def run_nlp_pipeline(cv_text: str) -> dict:
 
     experience_years = int(annee) if annee else 2
     description = (
-        f"Profil local via spaCy/SBERT. Domaine detecte: {domaine}. "
+        f"Profil via Pinecone embeddings. Domaine detecte: {domaine}. "
         f"Niveau: {niveau}. Competences cles: {', '.join(tech_stack[:6])}."
     )
+    description_en = (
+        f"Profile via Pinecone embeddings. Detected domain: {domaine_en}. "
+        f"Level: {niveau}. Key skills: {', '.join(tech_stack[:6])}."
+    )
+
+    scores_domaines_en = [
+        {"domaine": _map_domain_to_english(d), "score": float(s)}
+        for d, s in scores
+    ]
 
     return {
         "position": domaine,
+        "position_en": domaine_en,
         "description": description,
+        "description_en": description_en,
         "experience_years": experience_years,
         "tech_stack": tech_stack[:12],
         "competences": competences,
         "domaine": domaine,
+        "domaine_en": domaine_en,
         "niveau": niveau,
         "scores_domaines": [{"domaine": d, "score": float(s)} for d, s in scores],
+        "scores_domaines_en": scores_domaines_en,
     }
